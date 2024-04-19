@@ -1,17 +1,8 @@
-# Repository for hosting the website of **status_code_1**
+# React + Vite
 
-## Prerequisites
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- npm
+Currently, two official plugins are available:
 
-## How to run the website
-
-- `npm install` to install the dependencies
-- `npm run dev` to run the live-server
-- This website supports tailwindcss so you can either use it or write vanilla css normally.
-
-## How to deploy the website
-
-- After you have made your changes and you want your changes to be deployed on the live site. Follow the below steps.
-- run `npx prettier --write .` to indent the code properly.
-- Run a `git push origin main` and make a pull request.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
