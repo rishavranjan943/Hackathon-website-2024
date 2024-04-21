@@ -5,6 +5,8 @@ import linkedinLogo from '../assets/images/linkedin_logo.png';
 import discordLogo from '../assets/images/discord_logo.png';
 import stars from '../assets/stars.svg'
 import './Footer.css'
+import footer from '../assets/footer.svg'
+
 
 function Footer() {
     return (
@@ -64,7 +66,11 @@ function Footer() {
                         </div>
                     </div>
             </div>
-            <div id="footer" className="bg-cover footer flex items-end justify-center">
+            {/* <div id="footer" className="bg-cover footer flex items-end justify-center">
+                <h1 className="m-0 text-xl xl:text-2xl text-bottom-footer">© 2023 IIIT Kalyani</h1>
+            </div> */}
+            <div className='footer-container'>
+                <img src={footer} alt="" className='img-background'/>
                 <h1 className="m-0 text-xl xl:text-2xl text-bottom-footer">© 2023 IIIT Kalyani</h1>
             </div>
         </div>
