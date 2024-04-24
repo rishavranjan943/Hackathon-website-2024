@@ -2,9 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import './components/Footer'
-import Footer from './components/Footer'
-import Discord from './components/Discord'
+import Footer from './components/Footer/Footer'
+import Discord from './components/Discord/Discord'
 
 function App() {
 
