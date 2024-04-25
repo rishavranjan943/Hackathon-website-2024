@@ -25,6 +25,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           git checkout deploy
+          sed '5a\  base: "/Hackathon-website-2024/",' vite.config.js # Only for Github Pages
           npm install
           npm run build
 
