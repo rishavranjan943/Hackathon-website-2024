@@ -73,6 +73,7 @@ function Schedule() {
         <>
             <div
                 id="schedule"
+                name="schedule"
                 className="py-10 px-5 sm:px-16 xl:px-48 2xl:px-56 bg-[#040842] font-vt323 bg-[url('/src/assets/images/discord/stars.svg')]"
             >
                 {/* <h1
