@@ -14,7 +14,7 @@ export default function Navbar(){
     return(
         <>
         <nav className="flex bg-gradient-to-b from-[#040842] to-[#040842] justify-between w-[100vw] h-[100px] mt-0 bg-blue-800 font-vt323">
-            <img className="ml-[1%] pt-[1%]" src="./public/images/logo.svg"></img>
+            <img className="ml-[2%] pt-[1%]" src="./public/images/logo.svg"></img>
             
             <ul className="flex space-x-[3rem] text-[2rem] text-white items-center">
                 <a onClick={scrollToSchedule} style={{ cursor: 'pointer' }}><li>SCHEDULE</li></a>
@@ -28,12 +28,3 @@ export default function Navbar(){
         </>
     )
 }
-
-{/* <div className="flex w-[100vw] h-[100px] items-center justify-center">
-            <ul className="flex space-x-[3rem] text-[2rem] text-white">
-                <li>SCHEDULE</li>
-                <li>TRACKS</li>
-                <li>PRIZES</li>
-                <li>MORE</li>
-            </ul>
-            </div> */}
