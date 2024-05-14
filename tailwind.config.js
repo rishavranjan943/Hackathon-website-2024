@@ -9,6 +9,7 @@ export default {
       fontFamily:{
       'vt323':["VT323", 'monospace' ],
       },  
+
       colors: {
         red: {
           DEFAULT: "rgba(231, 52, 39, 1)",
@@ -30,6 +31,8 @@ export default {
           100: "rgba(157, 68, 192, .5)",
         },
       },
+
+
     },
   },
   plugins: [],
