@@ -31,12 +31,12 @@ function LandingPage() {
             </h3>
           </div>
           <div className="flex text-center justify-center mt-5 ml-5 mr-5">
-            <div className="bg-top bg-no-repeat h-screen flex items-end flex-col justify-center "style={{
+            <div className="bg-top bg-no-repeat flex items-end flex-col justify-center h-[90%] "style={{
                 backgroundImage: `url(${HomeMascot})`,
                 backgroundSize: "15%",
               }}
             >
-              <div className="text-center justify-center gap-2">
+              <div className="text-center justify-center gap-2 mt-[21%]">
                 <div   className="bg-no-repeat bg-center text-center justify-center flex flex-row" style={{
                     backgroundImage: `url(${DevfolioBtn})`,
                     backgroundSize: "contain",
@@ -65,12 +65,12 @@ function LandingPage() {
         </section>
 
         {/* Timer section  */}
-        <section id="timer" className="mb-10">
+        <section id="timer" className="mt-[4%] mb-10">
           <TimerSection/>
         </section>
 
         {/* Schedule section */}
-        <section id="schedule" className=""></section>
+        <section id="schedule" className="mt-[12%]"></section>
         <Schedule/>
       </div>
     </>
