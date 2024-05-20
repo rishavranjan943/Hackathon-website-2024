@@ -2,10 +2,12 @@
 
 .main-footer{
     font-family: 'VT323', monospace;
+    height: 100%;
 }
 
 .upfooter {
     background-color: #040842;
+    /* border: 2px solid yellow; */
 }
 
 .address,

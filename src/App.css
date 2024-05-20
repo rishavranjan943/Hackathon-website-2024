@@ -1,7 +1,10 @@
+
 #root {
   text-align: center;
   background-color: #040842;
+  height: 100%;
 }
+
 
 .logo {
   height: 6em;
