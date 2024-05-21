@@ -5,6 +5,7 @@ import Schedule from './components/Schedule/Schedule'
 import TimerSection from './pages/TimerSection'
 import Navbar from './components/Navbar'
 import Sponsors from './components/Sponsors/Sponsors'
+import Faq from './components/Faq/Faq'
 
 import LandingPage from './pages/LandingPage'
 
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <LandingPage/>
       <Sponsors />
+      <Faq/>
       <Discord />
       <Footer />
     </>
