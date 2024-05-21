@@ -47,16 +47,10 @@ const faqData = [
 ];
 
 const Faq = () => {
-  const [openIndexes, setOpenIndexes] = useState([]);
+  const [openIndex, setOpenIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setOpenIndexes((prevIndexes) => {
-      if (prevIndexes.includes(index)) {
-        return prevIndexes.filter((i) => i !== index);
-      } else {
-        return [...prevIndexes, index];
-      }
-    });
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
@@ -64,35 +58,37 @@ const Faq = () => {
       <div className="w-full h-screen bg-[url('/src/assets/images/faq/faqbg.svg')] flex items-center justify-center">
         <img src={stars} alt="" className="absolute object-cover w-full h-full" />
         <div className="mb-10 text-center">
-        <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0 flex justify-center md:justify-start">$ ./<span id="heading-rules" className="text-white">FAQ</span></h1>
-        <div className="relative z-10 w-full max-w-4xl mx-4 xl:mx-7 p-6 bg-opacity-50 rounded-lg">
-          <div className="mt-6">
-            <div id="accordionFaq">
-              {faqData.map((faq, index) => (
-                <div key={index} className="mb-4">
-                  <h1 className="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
-                    <button
-                      onClick={() => handleToggle(index)}
-                      className={`faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition hover:z-[2] focus:z-[3] focus:outline-none ${openIndexes.includes(index) ? "text-[#169B81]" : ""}`}
-                      type="button"
+          <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0 flex justify-center md:justify-start">
+            $ ./<span id="heading-rules" className="text-white">FAQ</span>
+          </h1>
+          <div className="relative z-10 w-full max-w-4xl mx-4 xl:mx-7 p-6 bg-opacity-50 rounded-lg">
+            <div className="mt-6">
+              <div id="accordionFaq">
+                {faqData.map((faq, index) => (
+                  <div key={index} className="mb-4">
+                    <h1 className="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
+                      <button
+                        onClick={() => handleToggle(index)}
+                        className={`faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition hover:z-[2] focus:z-[3] focus:outline-none ${openIndex === index ? "text-[#169B81]" : ""}`}
+                        type="button"
+                      >
+                        {openIndex === index ? "[-]" : "[+]"}
+                      </button>
+                      <span className="text-left">{faq.question}</span>
+                    </h1>
+                    <div
+                      className={`overflow-hidden transition-max-height duration-500 ease-in-out ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}
                     >
-                      {openIndexes.includes(index) ? "[-]" : "[+]"}
-                    </button>
-                    {faq.question}
-                  </h1>
-                  <div
-                    className={`overflow-hidden transition-max-height duration-500 ease-in-out ${openIndexes.includes(index) ? 'max-h-screen' : 'max-h-0'}`}
-                  >
-                    <div className="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 2xl:pl-12 mt-2">
-                      {faq.answer}
+                      <div className="example text-[#D6D6D6] text-left text-xl sm:text-2xl pl-8 sm:pl-10 2xl:pl-12 mt-2">
+                        {faq.answer}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </>
   );
