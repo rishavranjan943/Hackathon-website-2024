@@ -47,7 +47,7 @@ function Footer() {
                                     STAY CONNECTED
                                 </h1>
                                 <div className="flex justify-center xl:justify-between gap-7 md:gap-10">
-                                    <a href="https://www.instagram.com/status._code/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.instagram.com/status._code_1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                                         <img className="sociallogos insta_logo brightness-0 invert-[1] hover:filter-none w-auto h-auto max-w-[30px]" src={instaLogo} alt="insta_logo" />
                                     </a>
                                     <a href="https://twitter.com/Status_Code_" target="_blank" rel="noopener noreferrer">
