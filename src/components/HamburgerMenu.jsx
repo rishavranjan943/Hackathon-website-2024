@@ -13,6 +13,14 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import hamburger from '../assets/images/Navbar/Vector.svg';
 export default function SwipeableTemporaryDrawer() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setState({ ...state, top: false }); // Close the drawer
+  };
+
   const [state, setState] = React.useState({
     top: false,
   });
@@ -45,9 +53,12 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {['SHEDULE', 'TRACKS', 'PRIZES', 'MORE'].map((text, index) => (
+        {['SCHEDULE', 'TRACKS', 'PRIZES', 'MORE'].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton onClick={() => {
+                const id = text === 'MORE' ? 'footer' : text.toLowerCase();
+                scrollToSection(id);
+              }}>
               {/* <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon> */}
@@ -73,7 +84,7 @@ export default function SwipeableTemporaryDrawer() {
   );
 
   return (
-    <div className='min-[540px]:hidden w-[70px] h-[60px]' >
+    <div className='min-[540px]:hidden w-[80px] h-[60px]' >
       {/* Conditionally render hamburger menu icon */}
       {/* <Button className='w-[20%] pr-0 pt-0' onClick={toggleDrawer(!state.top)} style={{ zIndex: state.top ? 9999 : 1 }}>
       <img className="min-[450px]:hidden min-[320px]:w-[30%] min-[320px]:pr-[0] min-[320px]:h-[18%] min-[320px]:mt-[40%] min-[320px]:mr-[30%]" src="./images/Vector.svg" ></img>
