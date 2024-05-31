@@ -55,7 +55,7 @@ const Faq = () => {
 
   return (
     <>
-      <div className="w-full h-screen bg-[url('/src/assets/images/faq/faqbg.svg')] flex items-center justify-center">
+      <div className="w-full h-screen bg-[url('/src/assets/images/faq/faqbg.svg')] flex items-center justify-center" id='faq'>
         <img src={stars} alt="" className="absolute object-cover w-full h-full" />
         <div className="mb-10 text-center">
           <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0 flex justify-center md:justify-start">

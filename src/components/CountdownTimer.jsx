@@ -18,9 +18,7 @@ const DateTimeDisplay = ({ value, type, isDanger }) => {
       {type == 'Days' && <span className="xl:text-[35px] text-[25px] max-[400px]:text-[20px] max-[640px]:text-[22px] ml-[0.5rem] max-[768px]:ml-0 max-[640px]:ml-[0rem]">{type}</span>}
       {type == 'Hours' && <span className="xl:text-[35px] xl:ml-[4rem] text-[25px] max-[400px]:text-[20px] max-[640px]:text-[22px] ml-[2.9rem] max-[768px]:ml-[2.5rem]  max-[640px]:ml-[2rem]">{type}</span>}
       {type == 'Minutes' && <span className="xl:text-[35px] xl:ml-[4.5rem] text-[25px] max-[400px]:text-[20px] max-[640px]:text-[22px] ml-[3rem] max-[768px]:ml-[2.2rem]  max-[640px]:ml-[2rem]">{type}</span>}
-      {type == 'Minutes' || type=='Seconds' && <span className="xl:text-[35px] xl:ml-[4rem] text-[25px] max-[400px]:text-[20px] max-[640px]:text-[22px] ml-[3rem] max-[768px]:ml-[2rem]  max-[640px]:ml-[1.5rem]">{type}</span>}
-      {/* <span className='text-[25px] ml-[1.5rem]'>{type}</span> */}
-      
+      {type == 'Minutes' || type=='Seconds' && <span className="xl:text-[35px] xl:ml-[4rem] text-[25px] max-[400px]:text-[20px] max-[640px]:text-[22px] ml-[3rem] max-[768px]:ml-[2rem]  max-[640px]:ml-[1.5rem]">{type}</span>}      
     </div>
   );
 };
