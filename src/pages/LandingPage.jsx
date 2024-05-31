@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import BgLandingPage from "/images/BgLandingPage.svg";
 import HomeMascot from "/images/HomeMascot.svg";
-import DevfolioBtn from "../assets/images/LandingPage/DevfolioBtn.svg";
-import DevfolioLogo from "../assets/images/LandingPage/DevfolioLogo.svg"
+import DevfolioBtn from "/images/DevfolioBtn.svg";
+import DevfolioLogo from "../assets/images/LandingPage/DevfolioLogo.svg";
 import TimerSection from "./TimerSection";
 import Schedule from "../components/Schedule/Schedule";
 import ScrollButton from "../assets/images/LandingPage/ScrollButton.svg"
@@ -53,7 +53,7 @@ function LandingPage() {
         }}
       >
         {/* Hero section */}
-        <section id="hero" className=" ml-5 mr-5 mt-[100px]">
+        <section id="hero" className=" ml-5 mr-5 max-[540px]:mt-[10px] mt-[100px]">
           <div>
             <h1
               className="text-white min-[320px]:text-[48px] sm:text-[12vh] font-vt323"
