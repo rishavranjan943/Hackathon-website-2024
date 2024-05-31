@@ -16,7 +16,7 @@ import ethIndiaLogo from '../../assets/images/sponsors/ethIndia.png';
 
 const Sponsors = () => {
     return (
-        <section className="relative">
+        <section className="relative" id='sponsors'>
 
             <div className="py-20 bg-[url('/src/assets/images/discord/stars.svg')]">
 
