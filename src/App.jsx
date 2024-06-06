@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <LandingPage/>
+      <LandingPage />
       <Sponsors />
       {/* <Faq/> */}
       <Discord />
