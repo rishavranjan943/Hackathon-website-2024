@@ -14,9 +14,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <LandingPage />
+      <LandingPage/>
       <Sponsors />
-      {/* <Faq/> */}
+      <Faq/>
       <Discord />
       <Footer />
     </>

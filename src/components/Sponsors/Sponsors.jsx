@@ -19,7 +19,7 @@ const Sponsors = () => {
     return (
         <section className="relative bg-[url('/src/assets/images/discord/stars.svg')]" id='sponsors'>
 
-            <div className="py-20 max-w-[1000px] md:mx-8 lg:mx-12 xl:mx-auto">
+            <div className="max-w-[1000px] md:mx-8 lg:mx-12 xl:mx-auto">
                 <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ tar -xvz <span className='text-white'>SPONSORS</span>.tar.gz</h1>
 
                 <div className='mb-4 flex flex-col gap-1 sm:gap-1'>
