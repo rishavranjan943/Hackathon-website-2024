@@ -18,7 +18,7 @@ const Sponsors = () => {
     return (
         <section className="relative">
 
-            <div className="py-20 bg-[url('/src/assets/images/discord/stars.svg')]">
+            <div className="py-10 bg-[url('/src/assets/images/discord/stars.svg')]">
 
 
                 <div className='mb-4 flex flex-col gap-2 sm:gap-1'>

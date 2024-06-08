@@ -55,14 +55,14 @@ const Faq = () => {
 
   return (
     <>
-      <div className="w-full h-screen bg-[url('/src/assets/images/faq/faqbg.svg')] flex items-center justify-center">
-        <img src={stars} alt="" className="absolute object-cover w-full h-full" />
-        <div className="mb-10 text-center">
-          <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0 flex justify-center md:justify-start">
+      <div className="relative w-full min-h-screen bg-[url('/src/assets/images/faq/faqbg.svg')] bg-cover bg-no-repeat flex items-start justify-center py-10">
+        <img src={stars} alt="stars" className="absolute w-full h-full object-cover" />
+        <div className="relative z-10 text-left mx-4 md:mx-8 lg:mx-12 xl:mx-20 w-full max-w-4xl">
+          <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
             $ ./<span id="heading-rules" className="text-white">FAQ</span>
           </h1>
-          <div className="relative z-10 w-full max-w-4xl mx-4 xl:mx-7 p-6 bg-opacity-50 rounded-lg">
-            <div className="mt-6">
+          <div className="relative z-10 w-auto p-6 rounded-lg">
+            <div className="mt-4">
               <div id="accordionFaq">
                 {faqData.map((faq, index) => (
                   <div key={index} className="mb-4">
@@ -79,7 +79,7 @@ const Faq = () => {
                     <div
                       className={`overflow-hidden transition-max-height duration-500 ease-in-out ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}
                     >
-                      <div className="example text-[#D6D6D6] text-left text-xl sm:text-2xl pl-8 sm:pl-10 2xl:pl-12 mt-2">
+                      <div className="text-[#D6D6D6] text-left text-xl sm:text-2xl pl-8 sm:pl-10 2xl:pl-12 mt-2">
                         {faq.answer}
                       </div>
                     </div>
