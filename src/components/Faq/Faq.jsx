@@ -77,7 +77,7 @@ const Faq = () => {
                       <span className="text-left">{faq.question}</span>
                     </h1>
                     <div
-                      className={`overflow-hidden transition-max-height duration-500 ease-in-out ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}
+                      className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[1000px]' : 'max-h-0'}`}
                     >
                       <div className="text-[#D6D6D6] text-left text-xl sm:text-2xl pl-8 sm:pl-10 2xl:pl-12 mt-2">
                         {faq.answer}
