@@ -13,9 +13,18 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import hamburger from '../assets/images/Navbar/Vector.svg';
 export default function SwipeableTemporaryDrawer() {
+
   const [state, setState] = React.useState({
     top: false,
   });
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setState({ ...state, top: false }); // Close the drawer
+  };
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -45,9 +54,12 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {['SHEDULE', 'TRACKS', 'PRIZES', 'MORE'].map((text, index) => (
+        {['SCHEDULE', 'SPONSORS', 'FAQ', 'CONTACT US'].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton onClick={() => {
+                const id = text === 'CONTACT US' ? 'footer' : text.toLowerCase();
+                scrollToSection(id);
+              }}>
               {/* <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon> */}
@@ -73,14 +85,15 @@ export default function SwipeableTemporaryDrawer() {
   );
 
   return (
-    <div className='min-[540px]:hidden w-[70px] h-[60px]' >
+    <div className='relative min-[540px]:hidden w-[80px] h-[60px] ml-[72%]' >
       {/* Conditionally render hamburger menu icon */}
       {/* <Button className='w-[20%] pr-0 pt-0' onClick={toggleDrawer(!state.top)} style={{ zIndex: state.top ? 9999 : 1 }}>
       <img className="min-[450px]:hidden min-[320px]:w-[30%] min-[320px]:pr-[0] min-[320px]:h-[18%] min-[320px]:mt-[40%] min-[320px]:mr-[30%]" src="./images/Vector.svg" ></img>
       </Button> */}
-      <button onClick={toggleDrawer(!state.top)} style={{ zIndex: 9999,position: 'absolute', }}><img className="min-[540px]:hidden min-[320px]:w-[100%]  min-[320px]:pr-[0] min-[320px]:h-[40%] min-[320px]:mt-[110%] min-[320px]:mr-[50%] ml-0" src={hamburger} ></img></button>
+      <button onClick={toggleDrawer(!state.top)} style={{ zIndex: 9999,position: 'fixed', }}><img className="min-[540px]:hidden min-[320px]:w-[100%]  min-[320px]:pr-[0] min-[320px]:h-[40%] min-[320px]:mt-[110%] min-[320px]:ml-[100%] ml-0" src={hamburger} ></img></button>
       <SwipeableDrawer
         anchor="top"
+        style={{ zIndex: 1000 }}
         open={state.top}
         onClose={toggleDrawer(false)}
         onOpen={toggleDrawer(true)}
