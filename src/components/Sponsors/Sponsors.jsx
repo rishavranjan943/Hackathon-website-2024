@@ -19,12 +19,12 @@ const Sponsors = () => {
     return (
         <section className="relative bg-[url('/src/assets/images/discord/stars.svg')]" id='sponsors'>
 
-            <div className="py-4 max-w-[1000px] md:mx-8 lg:mx-12 xl:mx-auto">
+            <div className="max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto">
                 <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ tar -xvz <span className='text-white'>SPONSORS</span>.tar.gz</h1>
 
                 <div className='mb-4 flex flex-col gap-1 sm:gap-1'>
                     {/* <h1 className="font-vt323 font-medium text-[12vw] leading-[12vw] sm:leading-[4rem] md:leading-[5rem] md:text-[9vw] lg:text-[7vw] xl:text-[6vw] xl:leading-[6rem] 3xl:leading-[8rem]" style={{ background: 'linear-gradient(to right, blue,blue,#dd50b3,#dd50b3)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>SPONSORS</h1> */}
-                    <p className='font-vt323 text-gray-400 w-[90vw] leading-[5vw] text-[4.5vw] sm:leading-0 sm:px-0  sm:w-[70vw] sm:text-lg sm:leading-5 md:text-[2.8vw] md:leading-6 md:w-[75vw] lg:text-xl lg:w-[56vw] lg:leading-5 xl:text-3xl xl:w-[55rem] mx-auto'>Thank you to our generous sponsors for contributing to the prize pool and making this awesome event a reality!</p>
+                    <p className='font-vt323 text-gray-400 w-[90vw] leading-[5vw] text-[4.5vw] sm:leading-0 sm:px-0  sm:w-[70vw] sm:text-lg sm:leading-5 md:text-[2.8vw] md:leading-6 md:w-[75vw] lg:text-xl lg:w-[56vw] lg:leading-5 xl:text-3xl xl:w-[55rem] text-center mx-auto'>Thank you to our generous sponsors for contributing to the prize pool and making this awesome event a reality!</p>
                 </div>
 
 

@@ -1,6 +1,6 @@
 
 #root {
-  text-align: center;
+  /* text-align: center; */
   background-color: #040842;
   height: 100%;
 }
@@ -34,9 +34,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;

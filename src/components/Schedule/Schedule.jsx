@@ -74,13 +74,9 @@ function Schedule() {
             <div
                 id="schedule"
                 name="schedule"
-                className="py-10 px-5 sm:px-16 xl:px-48 2xl:px-56 bg-[#040842] font-vt323 bg-[url('/src/assets/images/discord/stars.svg')]"
+                className="max-w-[1280px] xl:min-w-[1280px] mx-auto py-10 bg-[#040842] font-vt323 bg-[url('/src/assets/images/discord/stars.svg')]"
             >
-                {/* <h1
-        className="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl"
-      >
-        $ <span id="heading-schedule"></span>
-      </h1> */}
+                <h1 className='mx-5 yxl:mx-0 py-6 text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ cat <span className='text-white'>SCHEDULE</span>.txt</h1>
                 <div className="timeline mx-30 flex justify-center">
                     <button className="prev mr-10 opacity-50 hover:opacity-100 min-w-[30px]">
                         <img src={left_key} alt="" />
