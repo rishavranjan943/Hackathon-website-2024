@@ -11,7 +11,7 @@ import footer from '../../assets/images/footer/footer.svg'
 function Footer() {
     return (
         <>
-        <div id="footer" className='main-footer'>
+        <div id="footer" className='main-footer text-center'>
                 <div className="container mx-auto px-4 py-8">
                     <p className="footercontent text-xl md:text-2xl  text-[#BEBEBE] text-center inline">Join our Discord Community to stay updated on all the latest developments and <br className="hidden lg:inline" />announcements for our hackathon! Don&apos;t miss out on key updates and opportunities, join us today!</p>
                 </div>

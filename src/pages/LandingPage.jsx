@@ -100,7 +100,7 @@ function LandingPage() {
         </section>
 
         {/* Timer section  */}
-        <section id="timer" className="mt-[4%] mb-10">
+        <section id="timer" className="mt-[4%]">
           <TimerSection />
         </section>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import stars from '../../assets/images/footer/stars.svg';
 // import mlhLogo from '../../assets/images/sponsors/mlh.png';
 // import postmanLogo from '../../assets/images/sponsors/postman.png';
 // import awsLogo from '../../assets/images/sponsors/aws.png';
@@ -20,7 +21,7 @@ const Sponsors = () => {
         <section className="relative bg-[url('/src/assets/images/discord/stars.svg')]" id='sponsors'>
 
             <div className="max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto">
-                <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ tar -xvz <span className='text-white'>SPONSORS</span>.tar.gz</h1>
+                <h1 className='mx-5 xl:mx-0 py-6 md:text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ tar -xvfz <span className='text-white'>SPONSORS</span>.tar.gz</h1>
 
                 <div className='mb-4 flex flex-col gap-1 sm:gap-1'>
                     {/* <h1 className="font-vt323 font-medium text-[12vw] leading-[12vw] sm:leading-[4rem] md:leading-[5rem] md:text-[9vw] lg:text-[7vw] xl:text-[6vw] xl:leading-[6rem] 3xl:leading-[8rem]" style={{ background: 'linear-gradient(to right, blue,blue,#dd50b3,#dd50b3)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>SPONSORS</h1> */}
@@ -74,6 +75,7 @@ const Sponsors = () => {
 
 
             </div>
+            <img src={stars} alt="stars" className="absolute w-screen h-screen top-[100%] object-cover opacity-70" />
         </section>
     )
 }

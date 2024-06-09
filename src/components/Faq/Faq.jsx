@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import stars from '../../assets/images/footer/stars.svg';
+import clouds from '../../assets/images/faq/faqbg.svg';
 
 const faqData = [
   {
@@ -55,9 +56,8 @@ const Faq = () => {
 
   return (
     <>
-      <div className="relative w-full min-h-screen bg-[url('/src/assets/images/faq/faqbg.svg')] bg-cover bg-no-repeat flex items-start justify-center ">
-        <img src={stars} alt="stars" className="absolute w-full h-full object-cover" />
-        <div className="relative z-10 text-left mx-4 md:mx-8 lg:mx-12 xl:mx-20 w-full max-w-4xl">
+      <div className="relative w-screen flex items-start justify-center">
+        <div className="relative z-10 text-left mx-4 md:mx-8 lg:mx-12 xl:mx-20 w-full max-w-[1280px]">
           <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
             $ ./<span id="heading-rules" className="text-white">FAQ</span>
           </h1>
