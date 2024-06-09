@@ -12,6 +12,9 @@ function Footer() {
     return (
         <>
         <div id="footer" className='main-footer'>
+                <div className="container mx-auto px-4 py-8">
+                    <p className="footercontent text-xl md:text-2xl  text-[#BEBEBE] text-center inline">Join our Discord Community to stay updated on all the latest developments and <br className="hidden lg:inline" />announcements for our hackathon! Don&apos;t miss out on key updates and opportunities, join us today!</p>
+                </div>
             <div id="upfooter" className='bg-cover upfooter relative'>
                     <div className="flex flex-col py-5 xl:py-10 h-[100%] xl:h-[100%]  gap-5 justify-center item-center">
                         <img src={stars} alt="" className='absolute object-cover w-full h-full'/>
