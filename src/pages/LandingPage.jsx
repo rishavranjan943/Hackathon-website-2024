@@ -82,7 +82,7 @@ function LandingPage() {
                     Apply with Devfolio
                   </button></a>
                 </div>
-                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[25px] font-vt323 min-[320px]:text-[18px] md:text-2xl m-3 bg-gradient-to-b from-gradient_purple_fade-0 via-gradient_purple_fade-50 to-gradient_purple_fade-100  text-transparent bg-clip-text">
+                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[25px] font-vt323 min-[320px]:text-[18px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
                   Unleash your creativity and join Status Code 1, an official
                   MLH Member Event and the ultimate 36-hour hackathon
                   extravaganza! Compete across diverse categories, showcasing
@@ -91,7 +91,7 @@ function LandingPage() {
                   challenge yourself,
                 </p>
 
-                <button className="">
+                <button className="animate-bounce">
                   <a onClick={scrollToTimer}> <img src={ScrollButton} alt="Down" width="80%" /></a>
                 </button>
               </div>

@@ -7,7 +7,7 @@ import discordSCImage from '../../assets/images/discord/discord_sc.png'; // Impo
 function Discord() {
     return (
         <>
-            <div className="background-container">
+            <div className="background-container text-center">
                 <div className="over"></div>
                 <div className="overlay"></div>
                 <div className="overlay2"></div>

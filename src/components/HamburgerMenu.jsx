@@ -85,7 +85,7 @@ export default function SwipeableTemporaryDrawer() {
   );
 
   return (
-    <div className='relative min-[540px]:hidden w-[80px] h-[60px] ml-[72%]' >
+    <div className='relative min-[540px]:hidden w-[80px] h-[60px] ml-[76%]' >
       {/* Conditionally render hamburger menu icon */}
       {/* <Button className='w-[20%] pr-0 pt-0' onClick={toggleDrawer(!state.top)} style={{ zIndex: state.top ? 9999 : 1 }}>
       <img className="min-[450px]:hidden min-[320px]:w-[30%] min-[320px]:pr-[0] min-[320px]:h-[18%] min-[320px]:mt-[40%] min-[320px]:mr-[30%]" src="./images/Vector.svg" ></img>
