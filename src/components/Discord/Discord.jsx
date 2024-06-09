@@ -1,6 +1,7 @@
 import React from 'react';
 import './Discord.css';
-import discordSCImage from '../../assets/images/discord/discord_sc.svg'; // Import the image
+// import discordSCImage from '../../assets/images/discord/discord_sc.svg'; // Import the image
+import discordSCImage from '../../assets/images/discord/discord_sc.png'; // Import the image
 
 
 function Discord() {
