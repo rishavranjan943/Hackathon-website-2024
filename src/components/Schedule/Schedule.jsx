@@ -87,11 +87,11 @@ function Schedule() {
             <div
                 id="schedule"
                 name="schedule"
-                className="w-screen py-10 bg-[#040842] font-vt323 bg-no-repeat"
+                className="w-screen py-10 bg-transparent font-vt323 bg-no-repeat"
                 style={{
-                    backgroundImage: `url('/src/assets/images/discord/stars.svg')`,
-                    backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-                    backgroundSize: 'cover',
+                    // backgroundImage: `url('/src/assets/images/discord/stars.svg')`,
+                    // backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+                    // backgroundSize: 'cover',
                 }}
             >
                 <div className='max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto'>
