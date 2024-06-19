@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import stars from '../../assets/images/discord/stars.svg';
 import left_key from '../../assets/images/left_key.svg';
 import right_key from '../../assets/images/right_key.svg';
@@ -17,6 +17,7 @@ import web3 from '../../assets/images/tracks/web3.png';
 
 const Tracks = () => {
     const [selectedTrack, setSelectedTrack] = useState(1);
+    const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
 
     const trackData = [
         { id: 1, title: 'MEDICAL', description: 'In this track, participants work on developing software solutions related to healthcare and medicine. They might build applications that help patients manage their health, or tools that assist healthcare providers in diagnosing and treating patients.', image: medical, card: medical_card },
@@ -32,8 +33,27 @@ const Tracks = () => {
         setSelectedTrack(trackId);
     };
 
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            const { innerWidth, innerHeight } = window;
+            const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
+            const y = (e.clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
+            setBgPosition({ x, y });
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+        };
+    }, []);
+
     return (
-        <section className="relative mb-10 px-5 bg-[url('/src/assets/images/discord/stars.svg')] bg-opacity-50">
+        <section className="relative mb-10 px-5 bg-no-repeat" style={{
+            backgroundImage: `url(${stars})`,
+            backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+            backgroundSize: 'cover',
+        }}>
             {/* <img src={stars} className=" z-0 absolute pointer-events-none w-screen opacity-50"></img> */}
             <img src={trackData[selectedTrack - 1].image} alt="" className='z-1 absolute pointer-events-none left-0 right-0 mx-auto max-w-full xl:-translate-y-48 opacity-50'/>
             <div className='text-white max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto z-2'>
