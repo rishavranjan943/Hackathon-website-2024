@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import instaLogo from '../../assets/images/footer/insta_logo.png';
-import twitterLogo from '../../assets/images/footer/twitter_logo.png';
+import twitterLogo from '../../assets/images/footer/twitter.svg';
 import linkedinLogo from '../../assets/images/footer/linkedin_logo.png';
 import discordLogo from '../../assets/images/footer/discord_logo.png';
 import stars from '../../assets/images/footer/stars.svg';
@@ -51,12 +51,12 @@ function Footer() {
                                 <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" className="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Code Of Conduct<br />
                                 </a>
-                                {/* <a href="" className="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
+                            <a href="" className="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Community Partners<br />
                                 </a>
                                 <a href="" className="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Hackers Guide<br />
-                                </a> */}
+                                </a> 
                             </div>
                             <div className="social text-center xl:text-left">
                                 <h1 className="footerheading footerelements text-center text-2xl md:text-4xl m-0 mb-2 text-heading-footer">
