@@ -18,14 +18,13 @@ function LandingPage() {
         setBgSize('15%');
       } else if (width >= 1024) {
         setBgSize('18%');
-      }else if (width >= 750) {
+      } else if (width >= 750) {
         setBgSize('22%');
-      }else if (width >= 768) {
+      } else if (width >= 768) {
         setBgSize('15%');
-      }  else if(width>= 640){
-        setBgSize('25%')
-      }
-      else {
+      } else if (width >= 640) {
+        setBgSize('25%');
+      } else {
         setBgSize('40%');
       }
     };
@@ -90,10 +89,10 @@ function LandingPage() {
                   backgroundSize: "contain",
                 }}
                 >
-                  <a href="https://statuscode-1.devfolio.co/"><button className="text-purple font-vt323 text-2xl text-center justify-center flex  mt-2 mb-2 gap-3 ">
-                    <img src={DevfolioLogo} />
+                  <a href="https://statuscode-1.devfolio.co/" className="text-purple font-vt323 text-2xl text-center justify-center flex  mt-2 mb-2 gap-3">
+                    <img src={DevfolioLogo} alt="Devfolio Logo" />
                     Apply with Devfolio
-                  </button></a>
+                  </a>
                 </div>
                 <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[25px] font-vt323 min-[320px]:text-[18px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
                   Unleash your creativity and join Status Code 1, an official
