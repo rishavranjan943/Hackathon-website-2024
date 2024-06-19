@@ -1,21 +1,21 @@
-import React, { useEffect, useRef } from 'react';
-import right_key from '../../assets/images/right_key.svg'
-import left_key from '../../assets/images/left_key.svg'
-import bounty from '../../assets/images/bounty.svg'
-import bounty_start from '../../assets/images/bounty_start.svg'
+import React, { useEffect, useRef, useState } from 'react';
+import right_key from '../../assets/images/right_key.svg';
+import left_key from '../../assets/images/left_key.svg';
+import bounty from '../../assets/images/bounty.svg';
 
 function Schedule() {
     const timelineWrapperRef = useRef(null);
+    const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
         if (timelineWrapperRef.current) {
             if (window.innerWidth < 768) {
-                document.querySelector('.timeline-wrapper').scrollTo({ left: 20, behavior: 'smooth'});
+                document.querySelector('.timeline-wrapper').scrollTo({ left: 20, behavior: 'smooth' });
             }
-            var timelineElementWidth = 338;
-            var timelineWrapperWidth =
+            const timelineElementWidth = 338;
+            const timelineWrapperWidth =
                 document.querySelector('.timeline-wrapper').clientWidth;
-            var defaultShiftWidth =
+            const defaultShiftWidth =
                 timelineWrapperWidth < timelineElementWidth
                     ? timelineElementWidth / 4
                     : 0;
@@ -23,13 +23,13 @@ function Schedule() {
                 .scrollBy({ left: defaultShiftWidth, behavior: 'smooth' });
 
             document.querySelector('.prev').addEventListener('click', () => {
-                var timelineWrapperWidth =
+                const timelineWrapperWidth =
                     document.querySelector('.timeline-wrapper').clientWidth;
-                var defaultShiftWidth =
+                const defaultShiftWidth =
                     timelineWrapperWidth < timelineElementWidth
                         ? timelineElementWidth / 4
                         : 0;
-                var leftPosition =
+                const leftPosition =
                     defaultShiftWidth +
                     Math.max(
                         0,
@@ -43,14 +43,15 @@ function Schedule() {
                     .querySelector('.timeline-wrapper')
                     .scrollTo({ left: leftPosition, behavior: 'smooth' });
             });
+
             document.querySelector('.next').addEventListener('click', () => {
-                var timelineWrapperWidth =
+                const timelineWrapperWidth =
                     document.querySelector('.timeline-wrapper').clientWidth;
-                var defaultShiftWidth =
+                const defaultShiftWidth =
                     timelineWrapperWidth < timelineElementWidth
                         ? timelineElementWidth / 4
                         : 0;
-                var leftPosition =
+                const leftPosition =
                     defaultShiftWidth +
                     Math.min(
                         document.querySelector('.timeline-wrapper').scrollWidth -
@@ -67,14 +68,31 @@ function Schedule() {
             });
         }
 
-    }, [document.querySelector('.timeline-wrapper')]);
+        const handleMouseMove = (e) => {
+            const { innerWidth, innerHeight } = window;
+            const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
+            const y = (e.clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
+            setBgPosition({ x, y });
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+        };
+    }, []);
 
     return (
         <>
             <div
                 id="schedule"
                 name="schedule"
-                className="w-screen py-10 bg-[#040842] font-vt323 bg-[url('/src/assets/images/discord/stars.svg')]"
+                className="w-screen py-10 bg-[#040842] font-vt323 bg-no-repeat"
+                style={{
+                    backgroundImage: `url('/src/assets/images/discord/stars.svg')`,
+                    backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+                    backgroundSize: 'cover',
+                }}
             >
                 <div className='max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto'>
                     <h1 className='mx-5 xl:mx-0 py-6 text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ cat <span className='text-white'>SCHEDULE</span>.txt</h1>

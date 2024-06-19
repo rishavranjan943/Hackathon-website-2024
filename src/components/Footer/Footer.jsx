@@ -1,21 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import instaLogo from '../../assets/images/footer/insta_logo.png';
 import twitterLogo from '../../assets/images/footer/twitter_logo.png';
 import linkedinLogo from '../../assets/images/footer/linkedin_logo.png';
 import discordLogo from '../../assets/images/footer/discord_logo.png';
-import stars from '../../assets/images/footer/stars.svg'
-import './Footer.css'
-import footer from '../../assets/images/footer/footer.png'
-// import footer from '../../assets/images/footer/footer.svg'
-
+import stars from '../../assets/images/footer/stars.svg';
+import './Footer.css';
+import footer from '../../assets/images/footer/footer.png';
 
 function Footer() {
+    const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            const { innerWidth, innerHeight } = window;
+            const x = (e.clientX / innerWidth - 0.5) * 30; // Adjust the multiplier for sensitivity
+            const y = (e.clientY / innerHeight - 0.5) * 30; // Adjust the multiplier for sensitivity
+            setBgPosition({ x, y });
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+        };
+    }, []);
+
     return (
         <>
-        <div id="footer" className='main-footer'>
-            <div id="upfooter" className='bg-cover upfooter relative'>
+            <div id="footer" className='main-footer'>
+                <div id="upfooter" className='bg-cover upfooter relative'>
                     <div className="flex flex-col py-5 xl:py-10 h-[100%] xl:h-[100%]  gap-5 justify-center item-center">
-                        <img src={stars} alt="" className='absolute object-cover w-full h-full'/>
+                        <img src={stars} alt="" className='absolute object-cover w-full h-full' style={{ transform: `translate(${bgPosition.x}px, ${bgPosition.y}px)` }} />
                         <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center gap-5">
                             <div className="address footerelements text-center">
                                 <h1 className="footerheading text-2xl md:text-4xl md:mt-0 m-0 text-heading-footer">
@@ -63,15 +78,14 @@ function Footer() {
                                     </a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
+                </div>
+                <div className='footer-container'>
+                    <img src={footer} alt="" className='img-background' />
+                    <h1 className="m-0 text-xl xl:text-2xl text-bottom-footer">© 2024 IIIT Kalyani</h1>
+                </div>
             </div>
-            <div className='footer-container'>
-                <img src={footer} alt="" className='img-background'/>
-                <h1 className="m-0 text-xl xl:text-2xl text-bottom-footer">© 2024 IIIT Kalyani</h1>
-            </div>
-        </div>
         </>
     );
 }

@@ -5,11 +5,11 @@ import DevfolioBtn from "/images/DevfolioBtn.svg";
 import DevfolioLogo from "../assets/images/LandingPage/DevfolioLogo.svg";
 import TimerSection from "./TimerSection";
 import Schedule from "../components/Schedule/Schedule";
-import ScrollButton from "../assets/images/LandingPage/ScrollButton.svg"
-
+import ScrollButton from "../assets/images/LandingPage/ScrollButton.svg";
 
 function LandingPage() {
   const [bgSize, setBgSize] = useState('10%');
+  const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,10 +30,22 @@ function LandingPage() {
       }
     };
 
+    const handleMouseMove = (e) => {
+      const { innerWidth, innerHeight } = window;
+      const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
+      const y = (e.clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
+      setBgPosition({ x, y });
+    };
+
     window.addEventListener('resize', handleResize);
+    window.addEventListener('mousemove', handleMouseMove);
+
     handleResize();
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
   }, []);
 
   const scrollToTimer = () => {
@@ -42,13 +54,14 @@ function LandingPage() {
       scheduleSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
   return (
     <>
       <div
         className=" h-full w-full flex flex-col text-center bg-no-repeat  bg-bg_color m-0"
         style={{
           backgroundImage: `url(${BgLandingPage})`,
-          backgroundPositionY: "20%",
+          backgroundPosition: `${50 + bgPosition.x}% ${20 + bgPosition.y}%`,
           backgroundSize: "cover",
         }}
       >
