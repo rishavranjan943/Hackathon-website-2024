@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Bgimage from '../../assets/images/discord/JOIN.png';
+import Bgimage from '../../assets/images/discord/JOIN2.png';
 import './Discord.css';
 
 function Discord() {
