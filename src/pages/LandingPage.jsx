@@ -73,7 +73,7 @@ function LandingPage() {
         {/* Hero section */}
         <section
           id="hero"
-          className=" ml-5 mr-5 max-[540px]:mt-[10px] mt-[100px] 2xl:mt-[150px] "
+          className=" ml-5 mr-5 max-[540px]:mt-[60px] mt-[110px] 2xl:mt-[150px] "
         >
           <div>
             <h1
@@ -82,7 +82,7 @@ function LandingPage() {
             >
               STATUS CODE <span className="text-red">1</span>
             </h1>
-            <h3 className="text-purple-900 font-vt323 min-[320px]:text-[20px] md:text-2xl xl:text-[40px] 2xl:m-11 2xl:p-10 2xl:text-[4vh] bg-gradient-to-r from-gradient_blue_purple-0 via-gradient_blue_purple-50 to-gradient_blue_purple-100  text-transparent bg-clip-text">
+            <h3 className="text-purple-900 font-vt323 min-[320px]:text-[20px] md:text-3xl xl:text-[40px] 2xl:m-11 2xl:p-10 2xl:text-[4vh] bg-gradient-to-r from-gradient_blue_purple-0 via-gradient_blue_purple-50 to-gradient_blue_purple-100  text-transparent bg-clip-text">
               Code With Purpose & Innovate, Collaborate, Dominate
             </h3>
           </div>
@@ -109,13 +109,13 @@ function LandingPage() {
                   <button  onClick={() =>
                     window.open("https://statuscode-1.devfolio.co/")
                   }
-                   className="text-purple font-vt323 text-2xl text-center justify-center  flex  mt-2 mb-2 gap-3 2xl:gap-11 2xl:text-7xl 2xl:m-5   ">
+                   className="text-purple font-vt323 text-2xl text-center justify-center  flex  mt-2 mb-2 gap-3 2xl:gap-11 2xl:text-7xl 2xl:m-5     ">
                     <img className="2xl:w-[5vh]" src={DevfolioLogo} />
                     <p className="2xl:mt-5">Apply with Devfolio </p>
                   </button>
                 </div>
                 {/* </a> */}
-                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] 2xl:pl-[10vh] 2xl:pr-[10vh] 2xl:p-11 font-vt323 min-[320px]:text-[16px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
+                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] 2xl:pl-[17vh] 2xl:pr-[17vh] 2xl:p-11 font-vt323 min-[320px]:text-[16px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
                   Unleash your creativity and join Status Code 1, an official
                   MLH Member Event and the ultimate 36-hour hackathon
                   extravaganza! Compete across diverse categories, showcasing
