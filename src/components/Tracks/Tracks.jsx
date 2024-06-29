@@ -49,7 +49,7 @@ const Tracks = () => {
     }, []);
 
     return (
-        <section className="relative mb-10 px-5 bg-no-repeat" style={{
+        <section id='tracks' className="relative mb-10 px-5 bg-no-repeat" style={{
             backgroundImage: `url(${stars})`,
             backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
             backgroundSize: 'cover',

@@ -66,7 +66,7 @@ function LandingPage() {
         }}
       >
         {/* Hero section */}
-        <section id="hero" className=" ml-5 mr-5 max-[540px]:mt-[10px] mt-[100px]">
+        <section id="hero" className=" ml-5 mr-5 max-[540px]:mt-[60px] mt-[110px]">
           <div>
             <h1
               className="text-white min-[320px]:text-[48px] sm:text-[12vh] font-vt323"
