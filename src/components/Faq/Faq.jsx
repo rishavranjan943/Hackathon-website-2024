@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import stars from '../../assets/images/footer/stars.svg';
-import clouds from '../../assets/images/faq/faqbg.svg';
 
 const faqData = [
   {
@@ -54,8 +53,8 @@ const Faq = () => {
   useEffect(() => {
     const handleMouseMove = (e) => {
       const { innerWidth, innerHeight } = window;
-      const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
-      const y = (e.clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
+      const x = (e.clientX / innerWidth - 0.5) * 10;
+      const y = (e.clientY / innerHeight - 0.5) * 10;
       setBgPosition({ x, y });
     };
 
@@ -109,6 +108,14 @@ const Faq = () => {
             </div>
           </div>
         </div>
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${stars})`,
+            backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+            backgroundSize: 'cover',
+          }}
+        ></div>
       </div>
     </section>
   );

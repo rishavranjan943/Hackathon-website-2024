@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Bgimage from '../../assets/images/discord/JOIN2.png';
-import stars from '../../assets/images/discord/stars.svg'
+import stars from '../../assets/images/discord/stars.svg';
 import './Discord.css';
 
 function Discord() {
