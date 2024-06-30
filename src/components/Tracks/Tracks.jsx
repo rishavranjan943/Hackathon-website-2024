@@ -58,7 +58,7 @@ const Tracks = () => {
             <img src={trackData[selectedTrack - 1].image} alt="" className='z-1 absolute pointer-events-none left-0 right-0 mx-auto max-w-full xl:-translate-y-48 opacity-50'/>
             <div className='text-white max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto z-2'>
                 <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ ls -a <span className='text-white'>TRACKS</span></h1>
-                <div className='xl:flex'>
+                <div className='xl:flex'>   
                     <div className="track-section pl-12 xl:w-1/2 mr-5 mb-5 xl:mb-0" >
                         {selectedTrack ? (
                             <div>
