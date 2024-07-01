@@ -24,11 +24,12 @@ function Discord() {
     return (
         <div className="section relative">
             <div
-                className="absolute inset-0"
+                className="absolute  h-screen object-cover opacity-70 inset-1"
                 style={{
                     backgroundImage: `url(${stars})`,
-                    backgroundPosition: `${50+ bgPosition.x}px ${50 + bgPosition.y}px`,
+                    backgroundPosition: `${50+ bgPosition.x}% ${50 + bgPosition.y}%`,
                     backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
                 }}
             ></div>
             <img src={Bgimage} alt="Join Discord" className="img-background" />

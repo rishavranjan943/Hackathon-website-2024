@@ -48,22 +48,6 @@ const faqData = [
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const { innerWidth, innerHeight } = window;
-      const x = (e.clientX / innerWidth - 0.5) * 10;
-      const y = (e.clientY / innerHeight - 0.5) * 10;
-      setBgPosition({ x, y });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
 
   const handleToggle = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -104,14 +88,6 @@ const Faq = () => {
             </div>
           </div>
         </div>
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(${stars})`,
-            backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-            backgroundSize: 'cover',
-          }}
-        ></div>
       </div>
     </section>
   );
