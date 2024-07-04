@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Tracks from './components/Tracks/Tracks'
 import Sponsors from './components/Sponsors/Sponsors'
 import Faq from './components/Faq/Faq'
+import Cp from './components/Cp/Cp'
 
 import LandingPage from './pages/LandingPage'
 
@@ -18,6 +19,7 @@ function App() {
       <LandingPage/>
       <Tracks />
       <Sponsors />
+      <Cp/>
       <Faq/>
       <Discord />
       <Footer />
