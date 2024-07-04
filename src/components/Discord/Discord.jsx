@@ -22,7 +22,7 @@ function Discord() {
     }, []);
 
     return (
-        <div className="section relative">
+        <div className="section relative pt-[55px]" id="footer">
             <div
                 className="absolute  h-screen object-cover opacity-70 inset-1"
                 style={{
