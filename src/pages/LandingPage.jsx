@@ -136,12 +136,12 @@ function LandingPage() {
         </section>
 
         {/* Timer section  */}
-        <section id="timer" className="pt-[60px] mt-2">
+        <section id="timer" className="max-[768px]:pt-[40px] pt-[60px] mt-2">
           <TimerSection />
         </section>
 
         {/* Schedule section */}
-        <section id="schedule" className="pt-[60px] "></section>
+        <section id="schedule" className="max-[768px]:pt-[10px] pt-[60px] "></section>
         <Schedule />
       </div>
     </>

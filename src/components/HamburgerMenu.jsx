@@ -54,7 +54,7 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {['SCHEDULE', 'SPONSORS', 'FAQ', 'CONTACT US'].map((text, index) => (
+        {['SCHEDULE', 'TRACKS', 'SPONSORS', 'FAQ', 'CONTACT US'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton onClick={() => {
                 const id = text === 'CONTACT US' ? 'footer' : text.toLowerCase();

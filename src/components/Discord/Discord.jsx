@@ -22,18 +22,9 @@ function Discord() {
     }, []);
 
     return (
-        <div className="section relative pt-[55px]" id="footer">
-            <div
-                className="absolute  h-screen object-cover opacity-70 inset-1"
-                style={{
-                    backgroundImage: `url(${stars})`,
-                    backgroundPosition: `${50+ bgPosition.x}% ${50 + bgPosition.y}%`,
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                }}
-            ></div>
-            <img src={Bgimage} alt="Join Discord" className="img-background" />
-
+        <div id="footer" className="section max-[768px]:pt-[30px] pt-[55px]">
+            <div className="star-background" style={{ transform: `translate(${bgPosition.x}px, ${bgPosition.y}px)` }}></div>
+            <img src={Bgimage} alt="" className='img-background' />
             <a
                 href="https://discord.gg/UHwPBzy7UF"
                 className="bottom-overlay"
