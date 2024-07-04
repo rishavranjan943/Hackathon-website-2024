@@ -124,7 +124,7 @@ function LandingPage() {
                   challenge yourself.
                 </p>
 
-                <button className="animate-bounce 2xl:w-[5%]  ">
+                <button className="animate-bounce 3xl:w-[5%]  ">
                   <a onClick={scrollToTimer}>
                     {" "}
                     <img src={ScrollButton} alt="Down" width="80% " />
