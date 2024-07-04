@@ -10,8 +10,8 @@ import hardware_card from '../../assets/images/tracks/hardware_card.png';
 import hardware from '../../assets/images/tracks/hardware.png';
 import open_innovation_card from '../../assets/images/tracks/open_innovation_card.png';
 import open_innovation from '../../assets/images/tracks/open_innovation.png';
-import education_card from '../../assets/images/tracks/hardware_card.png';
-import education from '../../assets/images/tracks/hardware.png';
+import education_card from '../../assets/images/tracks/education_card.png';
+import education from '../../assets/images/tracks/education.png';
 import web3_card from '../../assets/images/tracks/web3_card.png';
 import web3 from '../../assets/images/tracks/web3.png';
 
@@ -58,7 +58,7 @@ const Tracks = () => {
             <img src={trackData[selectedTrack - 1].image} alt="" className='z-1 absolute pointer-events-none left-0 right-0 mx-auto max-w-full xl:-translate-y-48 opacity-50'/>
             <div className='text-white max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto z-2'>
                 <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ ls -a <span className='text-white'>TRACKS</span></h1>
-                <div className='xl:flex'>   
+                <div className='lg:flex'>   
                     <div className="track-section pl-12 xl:w-1/2 mr-5 mb-5 xl:mb-0" >
                         {selectedTrack ? (
                             <div>
@@ -75,7 +75,7 @@ const Tracks = () => {
                             {trackData.map((track) => (
                                 <div key={track.id} className="card min-w-24 sm:min-w-36 grid place-items-center relative" onClick={() => handleCardClick(track.id)}>
                                     <img src={track.card} alt="" className='opacity-70'/>
-                                    <h4 className='absolute text-xl md:text-2xl xl:text-3xl left-0 top-0 right-0 bottom-0 m-auto w h-fit text-center'>{track.title}</h4>
+                                    <h4 className='absolute text-lg md:text-2xl left-0 top-0 right-0 bottom-0 m-auto w h-fit text-center px-4'>{track.title}</h4>
                                 </div>
                             ))}
                         </div>
