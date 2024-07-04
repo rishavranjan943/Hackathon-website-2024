@@ -54,12 +54,8 @@ const Faq = () => {
   };
 
   return (
-    <section id='faq' className='max-[768px]:pt-[50px] pt-[95px]'>
-      <div className="relative w-screen flex items-start justify-center" style={{
-        backgroundImage: `url(${stars})`,
-        backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-        backgroundSize: 'cover',
-      }}>
+    <section id='faq' className='max-[768px]:pt-[60px] pt-[95px]'>
+      <div className="relative w-screen flex items-start justify-center">
         <div className="relative z-10 text-left mx-4 md:mx-8 lg:mx-12 xl:mx-20 w-full max-w-[1280px]">
           <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
             $ ./<span id="heading-rules" className="text-white">FAQ</span>

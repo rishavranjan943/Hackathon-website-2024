@@ -22,7 +22,7 @@ function Discord() {
     }, []);
 
     return (
-        <div id="footer" className="section max-[768px]:pt-[30px] pt-[55px]">
+        <div id="footer" className="section max-[768px]:pt-[40px] pt-[55px]">
             <div className="star-background" style={{ transform: `translate(${bgPosition.x}px, ${bgPosition.y}px)` }}></div>
             <img src={Bgimage} alt="" className='img-background' />
             <a
