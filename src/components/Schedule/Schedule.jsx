@@ -47,21 +47,7 @@ function Schedule() {
             document.querySelector('.next').addEventListener('click', () => {
                 const timelineWrapperWidth =
                     document.querySelector('.timeline-wrapper').clientWidth;
-                const defaultShiftWidth =
-                    timelineWrapperWidth < timelineElementWidth
-                        ? timelineElementWidth / 4
-                        : 0;
-                const leftPosition =
-                    defaultShiftWidth +
-                    Math.min(
-                        document.querySelector('.timeline-wrapper').scrollWidth -
-                        timelineWrapperWidth,
-                        Math.ceil(
-                            (document.querySelector('.timeline-wrapper').scrollLeft +
-                                timelineElementWidth) /
-                            timelineElementWidth
-                        ) * timelineElementWidth
-                    );
+                const leftPosition = document.querySelector('.timeline-wrapper').scrollLeft + timelineElementWidth;
                 document
                     .querySelector('.timeline-wrapper')
                     .scrollTo({ left: leftPosition, behavior: 'smooth' });
@@ -127,7 +113,7 @@ function Schedule() {
                                     className="flex flex-col justify-center items-center min-w-[330px] m-1"
                                 >
                                     <h1 className="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">
-                                        Aug 17
+                                        July 30
                                     </h1>
                                     <h3 className="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
                                         12:00 AM
