@@ -40,11 +40,11 @@ export default function Navbar(){
             <img className="justify-start min-[3840px]:w-[300px] max-[450px]:w-[86px] max-[540px]:w-[90px] max-[640px]:w-[100px] sm:w-[107px] md:w-[88px] lg:w-[107px] xl:w-[120px] " src={sc1_logo}></img>
             
             <ul className=" justify-center flex min-[3840px]:text-[80px] min-[3840px]:space-x-[7rem]  xl:space-x-[4rem] lg:space-x-[3rem] sm:space-x-[1.6rem] sm:text-[22px] min-[540px]:space-x-[1.6rem] min-[540px]:text-[22px] md:text-[25px] md:space-x-5 lg:text-[1.8 rem] xl:text-[2.3rem] text-white items-center max-[768px]:hidden ">
-                <a onClick={scrollToSchedule} style={{ cursor: 'pointer' }}><li className="hover:text-[#c3c3c3]">SCHEDULE</li></a>
-                <a onClick={scrollToTracks} style={{ cursor: 'pointer' }}><li className="hover:text-[#c3c3c3]">TRACKS</li></a>
-                <a onClick={scrollToSponsors} style={{ cursor: 'pointer' }}><li className="hover:text-[#c3c3c3]">SPONSORS</li></a>
-                <a onClick={scrollToFaq} style={{ cursor: 'pointer' }}><li className="hover:text-[#c3c3c3]">FAQ</li></a>
-                <a onClick={scrollToFooter} style={{ cursor: 'pointer' }}><li className="hover:text-[#c3c3c3]">CONTACT US</li></a>
+                <a onClick={scrollToSchedule} ><li className="hover:text-[#c3c3c3]">SCHEDULE</li></a>
+                <a onClick={scrollToTracks}><li className="hover:text-[#c3c3c3]">TRACKS</li></a>
+                <a onClick={scrollToSponsors}><li className="hover:text-[#c3c3c3]">SPONSORS</li></a>
+                <a onClick={scrollToFaq}><li className="hover:text-[#c3c3c3]">FAQ</li></a>
+                <a onClick={scrollToFooter}><li className="hover:text-[#c3c3c3]">CONTACT US</li></a>
 
             </ul>
             <img className= "justify-end min-[3840px]:w-[400px] md:w-[110px] lg:w-[154px] xl:w-[175px] max-[768px]:hidden" src={iiit_logo}></img>

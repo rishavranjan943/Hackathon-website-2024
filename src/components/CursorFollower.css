@@ -1,12 +1,25 @@
-/* CursorFollower.css */
+body {
+    cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+    position: absolute;
+    pointer-events: none; /* Ensure the images don't block clicking */
+    transform: translate(-50%, -50%); /* Center the images on the cursor */
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    z-index: 10000; /* Ensure it is above other elements */
+}
+
 .cursor-follower {
     position: absolute;
     pointer-events: none; /* Ensure the image doesn't block clicking */
-    transform: translate(80%,0); /* Center the image on the cursor */
+    transform: translate(50%, -50%); /* Center the image on the cursor */
     display: block;
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
     transition: opacity 0.2s ease; /* Smooth transition */
+    z-index: 10000; /* Ensure it is above other elements */
 }
 
 .cursor-follower.visible {

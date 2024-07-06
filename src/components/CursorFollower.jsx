@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './CursorFollower.css';
 
 const CursorFollower = () => {
-    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+    const [followerPosition, setFollowerPosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
         const handleMouseMove = (e) => {
-            setPosition({ x: e.pageX, y: e.pageY });
+            setCursorPosition({ x: e.pageX, y: e.pageY });
+            setTimeout(() => {
+                setFollowerPosition({ x: e.pageX, y: e.pageY });
+            }, 100); // Delay the follower for a trailing effect
         };
 
         document.addEventListener('mousemove', handleMouseMove);
@@ -17,12 +21,20 @@ const CursorFollower = () => {
     }, []);
 
     return (
-        <img
-            src="src/assets/images/LandingPage/cursor.svg"
-            alt="Cursor Image"
-            className="cursor-follower"
-            style={{ left: `${position.x}px`, top: `${position.y}px` }}
-        />
+        <>
+            <img
+                src="src/assets/images/LandingPage/cursor1.svg"
+                alt="Custom Cursor"
+                className="custom-cursor"
+                style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
+            />
+            <img
+                src="src/assets/images/LandingPage/cursor.svg"
+                alt="Cursor Follower"
+                className="cursor-follower"
+                style={{ left: `${followerPosition.x}px`, top: `${followerPosition.y}px` }}
+            />
+        </>
     );
 };
 
