@@ -116,8 +116,7 @@ function LandingPage() {
                 </div>
                 {/* </a> */}
                 <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] min-[3840px]:pl-[17vh] min-[3840px]:pr-[17vh] min-[3840px]:p-11 2xl:p-5 font-vt323 min-[320px]:text-[16px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
-                  Unleash your creativity and join Status Code 1, an official
-                  MLH Member Event and the ultimate 36-hour hackathon
+                  Unleash your creativity and join Status Code 1, the ultimate 36-hour hackathon
                   extravaganza! Compete across diverse categories, showcasing
                   your skills, ingenuity, and collaborative spirit alongside
                   like-minded individuals. Discover the perfect platform to

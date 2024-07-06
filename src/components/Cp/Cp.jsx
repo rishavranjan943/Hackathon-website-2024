@@ -56,7 +56,7 @@ const SimpleSlider = ({ images, direction }) => {
   }, []);
 
   return (
-    <div className="slider-container w-screen relative m-0 p-0">
+    <div className="slider-container w-screen relative p-0">
       <div
         className={`slider w-fit ${direction === 'left' ? 'slide-left' : 'slide-right'}`}
         style={{
@@ -64,7 +64,7 @@ const SimpleSlider = ({ images, direction }) => {
         }}
       >
         {images.map((image, index) => (
-          <div key={index} className="slide mx-4 sm:mx-10 w-[200px] sm:w-[30vw] md:w-[25vw] xl:w-[20vw]">
+          <div key={index} className="slide my-3 sm:my-6 mx-4 sm:mx-10 w-[200px] sm:w-[30vw] md:w-[25vw] xl:w-[20vw]">
             <img
               src={image.src}
               alt={image.alt}
@@ -82,8 +82,8 @@ const SimpleSlider = ({ images, direction }) => {
 
 const Cp = () => {
   return (
-    <div className="sliders-wrapper gap-y-6 sm:gap-y-12">
-      <div className="w-full max-md:px-5 max-xl:px-10 xl:w-[1280px] self-center">
+    <div className="sliders-wrapper mt-4">
+      <div className="w-full max-md:px-5 max-xl:px-10 xl:w-[1280px] self-center mb-0 sm:mb-8">
         <h1 className='text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>
           $ sudo apt-get i&nbsp;<span className='text-white'>commun<span className='text-red'>1</span>ty partners</span>
         </h1>

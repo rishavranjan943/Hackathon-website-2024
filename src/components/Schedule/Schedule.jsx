@@ -92,7 +92,7 @@ function Schedule() {
                                 className="timeline-wrapper max-w-[990px] flex overflow-x-auto no-scrollbar" ref={timelineWrapperRef}
                             >
                                 <div
-                                    className="flex flex-col justify-center items-center min-w-[330px] m-1"
+                                    className="flex flex-col justify-center items-center min-w-[330px]"
                                 >
                                     <h1 className="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">
                                         May 5

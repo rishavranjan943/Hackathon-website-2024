@@ -89,11 +89,11 @@ const Sponsors = () => {
                     <div className='flex flex-wrap max-sm:flex-col items-center justify-center gap-6 sm:gap-16 md:px-12 2xl:px-24 max-sm:gap-y-8'>
                         {/* <img src={githubLogo} alt="github" className='w-[16vw] h-[6vw] sm:w-[12vw] sm:h-[5vw]' />
                         <img src={jinaLogo} alt="jina" className='w-[16vw] h-[7vw] sm:w-[12vw] sm:h-[5vw]' /> */}
-                        <Link to='https://rosenfeldmedia.com/'><img src={rosenfeldLogo} alt="echo3D" className='w-[30vw] sm:w-[18vw] md:w-[15vw]' /></Link>
-                        <Link to='https://www.echo3d.com/'><img src={echo3DLogo} alt="echo3D" className='w-[30vw] sm:w-[18vw] md:w-[15vw]' /></Link>
+                        <Link to='https://rosenfeldmedia.com/'><img src={rosenfeldLogo} alt="echo3D" className='w-[35vw] sm:w-[18vw] md:w-[15vw]' /></Link>
+                        <Link to='https://www.echo3d.com/'><img src={echo3DLogo} alt="echo3D" className='w-[35vw] sm:w-[18vw] md:w-[15vw]' /></Link>
                         <Link to='https://www.axure.com/'><img src={axureLogo} alt="echo3D" className='w-[30vw] sm:w-[18vw] md:w-[15vw]' /></Link>
-                        <Link to='https://artofproblemsolving.com/'><img src={aopsLogo} alt="echo3D" className='w-[30vw] sm:w-[18vw] md:w-[15vw]' /></Link>
-                        <Link to='https://www.interviewcake.com/'><img src={interviewCakeLogo} alt="echo3D" className='w-[30vw] sm:w-[18vw] md:w-[15vw]' /></Link>
+                        <Link to='https://artofproblemsolving.com/'><img src={aopsLogo} alt="echo3D" className='w-[35vw] sm:w-[18vw] md:w-[15vw]' /></Link>
+                        <Link to='https://www.interviewcake.com/'><img src={interviewCakeLogo} alt="echo3D" className='w-[40vw] sm:w-[18vw] md:w-[15vw]' /></Link>
                     </div>
                 </div>
             </div>
