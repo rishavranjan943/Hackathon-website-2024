@@ -22,8 +22,8 @@ const Sponsors = () => {
     useEffect(() => {
         const handleMouseMove = (e) => {
             const { innerWidth, innerHeight } = window;
-            const x = (e.clientX / innerWidth - 0.5) * 60; // Adjust the multiplier for sensitivity
-            const y = (e.clientY / innerHeight - 0.5) * 60; // Adjust the multiplier for sensitivity
+            const x = (e.clientX / innerWidth - 0.5) * 30; // Adjust the multiplier for sensitivity
+            const y = (e.clientY / innerHeight - 0.5) * 30; // Adjust the multiplier for sensitivity
             setBgPosition({ x, y });
         };
 
@@ -37,8 +37,8 @@ const Sponsors = () => {
     return (
         <section className="max-[768px]:pt-[40px] pt-[80px] relative" style={{
             backgroundImage: `url(${stars})`,
-            backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-            backgroundSize: 'cover',
+            backgroundPosition: `${50}% ${50 - bgPosition.y}%`,
+            backgroundSize: '110%',
         }} id='sponsors'>
             <div className="max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto">
                 <h1 className='mx-5 xl:mx-0 py-6 md:text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ tar -xvzf <span className='text-white'>SPONSORS</span>.tar.gz</h1>
@@ -98,11 +98,11 @@ const Sponsors = () => {
                 </div>
             </div>
             <div
-          className="absolute  h-screen top-[95%] object-cover opacity-70 inset-0"
+          className="absolute h-screen top-[99%] object-cover opacity-70 inset-0"
           style={{
             backgroundImage: `url(${stars})`,
-            backgroundPosition: `${50+bgPosition.x}% ${50+bgPosition.y}%`,
-            backgroundSize: 'cover',
+            backgroundPosition: `${50}% ${50 + bgPosition.y}%`,
+            backgroundSize: '110%',
             backgroundRepeat: 'no-repeat',
           }}
         ></div>
