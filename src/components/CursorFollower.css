@@ -4,25 +4,23 @@ body {
 
 .custom-cursor {
     position: absolute;
-    pointer-events: none; /* Ensure the images don't block clicking */
-    transform: translate(-50%, -50%); /* Center the images on the cursor */
+    pointer-events: none; /* Ensure the image doesn't block clicking */
+    transform: translate(-50%, -50%); /* Center the image on the cursor */
     width: 100px; /* Adjust size as needed */
     height: 100px; /* Adjust size as needed */
     z-index: 10000; /* Ensure it is above other elements */
 }
 
-.cursor-follower {
+.link-cursor {
+    content: url('src/assets/images/LandingPage/cursor1.svg');
     position: absolute;
-    pointer-events: none; /* Ensure the image doesn't block clicking */
-    transform: translate(50%, -50%); /* Center the image on the cursor */
-    display: block;
-    width: 80px; /* Adjust size as needed */
-    height: 80px; /* Adjust size as needed */
-    transition: opacity 0.2s ease; /* Smooth transition */
-    z-index: 10000; /* Ensure it is above other elements */
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    z-index: 10000;
 }
 
-.cursor-follower.visible {
-    display: block; /* Make it visible */
-    opacity: 1;
+a {
+    cursor: pointer; /* Ensure links have a pointer cursor */
 }
