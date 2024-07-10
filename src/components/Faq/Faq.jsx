@@ -57,14 +57,14 @@ const Faq = () => {
     <section id='faq' className='max-[768px]:pt-[60px] pt-[95px]'>
       <div className="relative w-screen flex items-start justify-center">
         <div className="relative z-10 text-left mx-4 md:mx-8 lg:mx-12 xl:mx-20 w-full max-w-[1280px]">
-          <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
+          <h1 className="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
             $ ./<span id="heading-rules" className="text-white">FAQ</span>
           </h1>
           <div className="relative z-10 w-auto p-6 rounded-lg">
-            <div className="mt-4">
+            <div className="sm:mt-4">
               <div id="accordionFaq">
                 {faqData.map((faq, index) => (
-                  <div key={index} className="mb-4">
+                  <div key={index} className="mb-2 sm:mb-4">
                     <h1 className="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
                       <button
                         onClick={() => handleToggle(index)}
