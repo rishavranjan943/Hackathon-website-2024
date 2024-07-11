@@ -75,19 +75,19 @@ const Sponsors = () => {
                 </div> */}
 
                 {/* TITLE SPONSOR */}
-                {/* <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#5FA6FF] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
-                    <h1 className='font-vt323 font-medium text-[#5FA6FF] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>TITLE</h1>
+                <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#5FA6FF] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                    <h1 className='font-vt323 font-medium text-[#5FA6FF] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>DIAMOND</h1>
                     <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
-                        <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
+                        {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
+                        <Link to='https://0x.day/'><img src={oxDayLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[19vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
                     </div>
-                </div> */}
+                </div>
 
                 {/* PLATINUM */}
                 <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#9d44c0] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
                     <h1 className='font-vt323 font-medium text-[#9d44c0] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>PLATINUM</h1>
                     <div className='flex flex-wrap max-sm:flex-col items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
                         {/* <img src={VectorLogo} alt="vector" className='w-[25vw] h-[5vw] sm:w-[20vw] sm:h-[4vw]' /> */}
-                        <Link to='https://0x.day/'><img src={oxDayLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[19vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
                         <Link to='https://devfolio.co/'><img src={devfolioLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
                         <Link to='https://gian.org/'><img src={gianLogo} alt="devfolio" width={1000} height={1000} className='w-[20vw] sm:w-[10vw] sm:-translate-y-2 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
                     </div>
@@ -125,12 +125,21 @@ const Sponsors = () => {
                 </div>
 
                 {/* CERTIFICATE PARTNER */}
-                <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#5FA6FF] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
                     <h1 className='font-vt323 font-medium text-[#5FA6FF] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>CERTIFICATE PARTNER</h1>
                     <div className='flex flex-wrap max-sm:flex-col items-center justify-center gap-6 sm:gap-16 md:px-12 2xl:px-24 max-sm:gap-y-8'>
                         {/* <img src={githubLogo} alt="github" className='w-[16vw] h-[6vw] sm:w-[12vw] sm:h-[5vw]' />
                         <img src={jinaLogo} alt="jina" className='w-[16vw] h-[7vw] sm:w-[12vw] sm:h-[5vw]' /> */}
                         <Link to='https://givemycertificate.com/'><img src={certificateLogo} alt="echo3D" className='w-[40vw] sm:w-[18vw] md:w-[18vw]' /></Link>
+                    </div>
+                </div>
+
+                {/* PLATFORM PARTNER */}
+                <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                    <h1 className='font-vt323 font-medium text-[#9D44C0] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>PLATFORM PARTNER</h1>
+                    <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
+                        {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
+                        <Link to='https://0x.day/'><img src={oxDayLogo} alt="devfolio" width={1000} height={1000} className='w-[30vw] sm:w-[15vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
                     </div>
                 </div>
             </div>
@@ -139,7 +148,7 @@ const Sponsors = () => {
           style={{
             backgroundImage: `url(${stars})`,
             backgroundPosition: `${50}% ${50 + bgPosition.y}%`,
-            backgroundSize: '110%',
+            backgroundSize: bgSize,
             backgroundRepeat: 'no-repeat',
           }}
         ></div>

@@ -51,7 +51,7 @@ export default function Navbar(){
             <img className="min-[768px]:hidden sm:w-[50px] max-[450px]:w-[35px] max-[540px]:w-[40px] max-[640px]:w-[50px]" src={iiit_logo_mobile}></img>
             
         </nav>
-        <div className=" absolute right-0 max-[540px]:mt-[22px] mt-[39px] w-[50px] mr-8">
+        <div className=" absolute right-0 max-[540px]:mt-[22px] mt-[39px] w-[50px]">
         <SwipeableTemporaryDrawer/>
         </div>
         </section>
