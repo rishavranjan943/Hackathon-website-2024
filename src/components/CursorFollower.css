@@ -1,14 +1,14 @@
 body {
-    cursor: none; /* Hide the default cursor */
+    cursor: none; 
 }
 
 .custom-cursor {
     position: absolute;
-    pointer-events: none; /* Ensure the image doesn't block clicking */
-    transform: translate(-50%, -50%); /* Center the image on the cursor */
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
-    z-index: 10000; /* Ensure it is above other elements */
+    pointer-events: none; 
+    transform: translate(-50%, -50%); 
+    width: 100px;
+    height: 100px; 
+    z-index: 10000; 
 }
 
 .link-cursor {
@@ -16,11 +16,11 @@ body {
     position: absolute;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     z-index: 10000;
 }
 
-a {
-    cursor: pointer; /* Ensure links have a pointer cursor */
+a, button, img, svg{
+    cursor: none; /* Ensure links have a pointer cursor */
 }
