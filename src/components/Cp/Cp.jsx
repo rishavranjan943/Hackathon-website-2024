@@ -5,7 +5,6 @@ const topImages = [
   { src: "src/assets/images/cp/cj.svg", alt: "cj" },
   { src: "src/assets/images/cp/cnhooghly.svg", alt: "cnhooghly" },
   { src: "src/assets/images/cp/dev.svg", alt: "dev" },
-  { src: "src/assets/images/cp/gian.svg", alt: "gian" },
   { src: "src/assets/images/cp/ieee.svg", alt: "ieee" },
   { src: "src/assets/images/cp/gdsc.svg", alt: "gdsc" },
 
@@ -13,7 +12,6 @@ const topImages = [
   { src: "src/assets/images/cp/cj.svg", alt: "cj" },
   { src: "src/assets/images/cp/cnhooghly.svg", alt: "cnhooghly" },
   { src: "src/assets/images/cp/dev.svg", alt: "dev" },
-  { src: "src/assets/images/cp/gian.svg", alt: "gian" },
   { src: "src/assets/images/cp/ieee.svg", alt: "ieee" },
   { src: "src/assets/images/cp/gdsc.svg", alt: "gdsc" },
 ];

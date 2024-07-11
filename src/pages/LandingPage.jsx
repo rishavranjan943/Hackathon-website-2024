@@ -77,7 +77,7 @@ function LandingPage() {
         >
           <div className="">
             <h1
-              className="text-white min-[320px]:text-5xl md:text-7xl xl:text-8xl  min-[3840px]:text-[12vh] font-vt323"
+              className="text-white min-[320px]:text-5xl md:text-7xl xl:text-8xl  min-[3840px]:text-[12vh] font-vt323 max-sm:mt-10"
               style={{ textShadow: "2px 2px 0 rgb(236, 83, 176, 1)" }}
             >
               STATUS CODE <span className="text-red">1</span>
@@ -115,7 +115,7 @@ function LandingPage() {
                   </button>
                 </div>
                 {/* </a> */}
-                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] min-[3840px]:pl-[17vh] min-[3840px]:pr-[17vh] min-[3840px]:p-11 2xl:p-5 font-vt323 min-[320px]:text-[16px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
+                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] min-[3840px]:pl-[17vh] min-[3840px]:pr-[17vh] min-[3840px]:p-11 2xl:p-5 font-vt323 min-[320px]:text-[18px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
                   Unleash your creativity and join Status Code 1, the ultimate 36-hour hackathon
                   extravaganza! Compete across diverse categories, showcasing
                   your skills, ingenuity, and collaborative spirit alongside
