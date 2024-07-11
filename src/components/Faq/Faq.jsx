@@ -23,7 +23,7 @@ const faqData = [
     answer: (
       <span>
         Register your team @
-        <a target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-500" href="https://statuscode1.devfolio.co/">Devfolio</a>
+        <a target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-500" href="https://statuscode-1.devfolio.co/">Devfolio</a>
       </span>
     ),
   },

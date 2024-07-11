@@ -13,8 +13,8 @@ function Footer() {
     useEffect(() => {
         const handleMouseMove = (e) => {
             const { innerWidth, innerHeight } = window;
-            const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
-            const y = (e.clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
+            const x = (e.clientX / innerWidth - 0.5) * 3; // Adjust the multiplier for sensitivity
+            const y = (e.clientY / innerHeight - 0.5) * 3; // Adjust the multiplier for sensitivity
             setBgPosition({ x, y });
         };
 
