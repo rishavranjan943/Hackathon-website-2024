@@ -54,7 +54,7 @@ const SimpleSlider = ({ images, direction }) => {
   }, []);
 
   return (
-    <div className="slider-container w-screen relative p-0">
+    <div className="slider-container w-full relative p-0">
       <div
         className={`slider w-fit ${direction === 'left' ? 'slide-left' : 'slide-right'}`}
         style={{
