@@ -13,8 +13,8 @@ function Footer() {
     useEffect(() => {
         const handleMouseMove = (e) => {
             const { innerWidth, innerHeight } = window;
-            const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
-            const y = (e.clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
+            const x = (e.clientX / innerWidth - 0.5) * 3; // Adjust the multiplier for sensitivity
+            const y = (e.clientY / innerHeight - 0.5) * 3; // Adjust the multiplier for sensitivity
             setBgPosition({ x, y });
         };
 
@@ -52,7 +52,7 @@ function Footer() {
                                 <a href="https://drive.google.com/file/d/1thr3gYMwAX-h0DmaEIGyba44lG53hRxg/view?usp=sharing" className="footercontent text-xl md:text-2xl resourcecontent  text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Sponsorship Brochure<br />
                                 </a>
-                                <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" className="footercontent text-xl md:text-2xl resourcecontent  text-[#BEBEBE] hover:text-white" target="_blank" rel="noopener noreferrer text-style-footer">
+                                {/* <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" className="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Code Of Conduct<br />
                                 </a>
                             <a href="" className="footercontent text-xl md:text-2xl resourcecontent  text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
@@ -60,7 +60,7 @@ function Footer() {
                                 </a>
                                 <a href="" className="footercontent text-xl md:text-2xl resourcecontent text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Hackers Guide<br />
-                                </a> 
+                                </a>  */}
                             </div>
                             <div className="social text-center xl:text-left">
                                 <h1 className="footerheading footerelements text-center text-2xl md:text-4xl m-0 mb-2 text-heading-footer">
@@ -71,7 +71,7 @@ function Footer() {
                                         <img className="sociallogos insta_logo brightness-0 invert-[1] hover:filter-none w-auto h-auto max-w-[30px]" src={instaLogo} alt="insta_logo" />
                                     </a>
                                     <a href="https://twitter.com/Status_Code_" target="_blank" rel="noopener noreferrer">
-                                        <img className="twitter_logo sociallogos brightness-0 invert-[1] hover:filter-none w-auto h-auto max-w-[30px]" src={twitterLogo} alt="twitter_logo" />
+                                        <img className="twitter_logo sociallogos brightness-0 invert-[1] hover:invert-[0.5] w-auto h-auto max-w-[30px]" src={twitterLogo} alt="twitter_logo" />
                                     </a>
                                     <a href="https://www.linkedin.com/company/statuscode0/" target="_blank" rel="noopener noreferrer" className="relative w-[30px]">
                                         <img className="sociallogos linkedin_logo absolute w-auto h-auto max-w-[30px] peer z-10 brightness-0 invert-[1] hover:filter-none" src={linkedinLogo} alt="linkedin_logo" />

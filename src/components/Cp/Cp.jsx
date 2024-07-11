@@ -2,37 +2,35 @@ import React, { useState, useEffect } from 'react';
 import './Cp.css';
 
 const topImages = [
-  { src: "src/assets/images/cp/cj.svg", alt: "cj" },
-  { src: "src/assets/images/cp/cnhooghly.svg", alt: "cnhooghly" },
-  { src: "src/assets/images/cp/dev.svg", alt: "dev" },
-  { src: "src/assets/images/cp/gian.svg", alt: "gian" },
-  { src: "src/assets/images/cp/ieee.svg", alt: "ieee" },
-  { src: "src/assets/images/cp/gdsc.svg", alt: "gdsc" },
+  { src: "/images/cj.svg", alt: "cj" },
+  { src: "/images/cnhooghly.svg", alt: "cnhooghly" },
+  { src: "/images/dev.svg", alt: "dev" },
+  { src: "/images/ieee.svg", alt: "ieee" },
+  { src: "/images/gdsc.svg", alt: "gdsc" },
 
   // double for infinite loop
-  { src: "src/assets/images/cp/cj.svg", alt: "cj" },
-  { src: "src/assets/images/cp/cnhooghly.svg", alt: "cnhooghly" },
-  { src: "src/assets/images/cp/dev.svg", alt: "dev" },
-  { src: "src/assets/images/cp/gian.svg", alt: "gian" },
-  { src: "src/assets/images/cp/ieee.svg", alt: "ieee" },
-  { src: "src/assets/images/cp/gdsc.svg", alt: "gdsc" },
+  { src: "/images/cj.svg", alt: "cj" },
+  { src: "/images/cnhooghly.svg", alt: "cnhooghly" },
+  { src: "/images/dev.svg", alt: "dev" },
+  { src: "/images/ieee.svg", alt: "ieee" },
+  { src: "/images/gdsc.svg", alt: "gdsc" },
 ];
 
 const bottomImages = [
-  { src: "src/assets/images/cp/iei.svg", alt: "iei" },
-  { src: "src/assets/images/cp/iiitians.svg", alt: "iiitians" },
-  { src: "src/assets/images/cp/rc.svg", alt: "rc" },
-  { src: "src/assets/images/cp/thc.svg", alt: "thc" },
-  { src: "src/assets/images/cp/gdscm.svg", alt: "gdscm" },
-  { src: "src/assets/images/cp/vuchvilla.svg", alt: "vv" },
+  { src: "/images/iei.svg", alt: "iei" },
+  { src: "/images/iiitians.svg", alt: "iiitians" },
+  { src: "/images/rc.svg", alt: "rc" },
+  { src: "/images/thc.svg", alt: "thc" },
+  { src: "/images/gdscm.svg", alt: "gdscm" },
+  { src: "/images/vuchvilla.svg", alt: "vv" },
 
     // double for infinite loop
-  { src: "src/assets/images/cp/iei.svg", alt: "iei" },
-  { src: "src/assets/images/cp/iiitians.svg", alt: "iiitians" },
-  { src: "src/assets/images/cp/rc.svg", alt: "rc" },
-  { src: "src/assets/images/cp/thc.svg", alt: "thc" },
-  { src: "src/assets/images/cp/gdscm.svg", alt: "gdscm" },
-  { src: "src/assets/images/cp/vuchvilla.svg", alt: "vv" },
+  { src: "/images/iei.svg", alt: "iei" },
+  { src: "/images/iiitians.svg", alt: "iiitians" },
+  { src: "/images/rc.svg", alt: "rc" },
+  { src: "/images/thc.svg", alt: "thc" },
+  { src: "/images/gdscm.svg", alt: "gdscm" },
+  { src: "/images/vuchvilla.svg", alt: "vv" },
 ];
 
 const SimpleSlider = ({ images, direction }) => {
@@ -66,7 +64,8 @@ const SimpleSlider = ({ images, direction }) => {
         {images.map((image, index) => (
           <div key={index} className="slide my-3 sm:my-6 mx-4 sm:mx-10 w-[200px] sm:w-[30vw] md:w-[25vw] xl:w-[20vw]">
             <img
-              src={image.src}
+            // adding the extra text to get it to display on github pages (only for dev) (remove before deploy)
+              src={(window.location.href == "https://iiitkalyanifosc.github.io/Hackathon-website-2024/" ? "/Hackathon-website-2024" : "") + image.src}
               alt={image.alt}
               className="slide-image"
               style={{
