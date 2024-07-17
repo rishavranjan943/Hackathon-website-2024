@@ -2,7 +2,7 @@ name: status_code_1_deployment
 on:
   push:
     branches:
-      - deploy
+      - deploy-main
   workflow_dispatch:
 jobs:
   FTP-Deploy-Action:
