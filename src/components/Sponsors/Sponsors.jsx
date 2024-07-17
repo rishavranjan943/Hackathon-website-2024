@@ -14,7 +14,7 @@ import avalancheLogo from '../../assets/images/sponsors/avalanche.png';
 import devfolioLogo from '../../assets/images/sponsors/devfolio.png';
 import echo3DLogo from '../../assets/images/sponsors/echo3D.png';
 import gianLogo from '../../assets/images/sponsors/gian.svg';
-// import githubLogo from '../../assets/images/sponsors/github (1).png';
+import riseLogo from '../../assets/images/sponsors/rise.png';
 // import jinaLogo from '../../assets/images/sponsors/jina.png';
 import ethIndiaLogo from '../../assets/images/sponsors/ethIndia.png';
 
@@ -135,11 +135,20 @@ const Sponsors = () => {
                 </div>
 
                 {/* PLATFORM PARTNER */}
-                <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#9D44C0] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
                     <h1 className='font-vt323 font-medium text-[#9D44C0] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>PLATFORM PARTNER</h1>
                     <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
                         {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
                         <Link to='https://0x.day/'><img src={oxDayLogo} alt="devfolio" width={1000} height={1000} className='w-[30vw] sm:w-[15vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
+                    </div>
+                </div>
+
+                {/* PLATFORM PARTNER */}
+                <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                    <h1 className='font-vt323 font-medium text-[#e29b29] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>VENUE PARTNER</h1>
+                    <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
+                        {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
+                        <Link to='https://0x.day/'><img src={riseLogo} alt="devfolio" width={1000} height={1000} className='w-[30vw] sm:w-[13vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
                     </div>
                 </div>
             </div>
