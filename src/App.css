@@ -5,6 +5,9 @@
   /* height: 100%; */
 }
 
+body {
+  background-color: #040842;
+}
 
 .logo {
   height: 6em;

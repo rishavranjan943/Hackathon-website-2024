@@ -71,7 +71,7 @@ const Tracks = () => {
                     </div>
                     <div className="carousel flex items-center gap-5 h-fit self-end">
                         <img src={left_key} alt="" className='opacity-50 hover:opacity-100'onClick={() => {document.querySelector('.tracks-wrapper').scrollLeft -= 158}}/>
-                        <div className='tracks-wrapper flex gap-5 max-w-[480px] overflow-x-auto scroll-smooth no-scrollbar'>
+                        <div className='tracks-wrapper flex gap-5 lg:max-w-[480px] overflow-x-auto scroll-smooth no-scrollbar'>
                             {trackData.map((track) => (
                                 <div key={track.id} className="card min-w-24 sm:min-w-36 grid place-items-center relative" onClick={() => handleCardClick(track.id)}>
                                     <img src={track.card} alt="" className='opacity-70'/>
