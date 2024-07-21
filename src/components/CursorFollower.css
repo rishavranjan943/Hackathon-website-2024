@@ -2,25 +2,23 @@ body {
     cursor: none; 
 }
 
-.custom-cursor {
+.custom-cursor, .link-cursor {
     position: absolute;
     pointer-events: none; 
     transform: translate(-50%, -50%); 
-    width: 100px;
-    height: 100px; 
     z-index: 10000; 
 }
 
-.link-cursor {
-    content: url('src/assets/images/LandingPage/cursor1.svg');
-    position: absolute;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    z-index: 10000;
+.custom-cursor {
+    width: 100px;
+    height: 100px; 
 }
 
-a, button, img, svg{
+.link-cursor {
+    width: 200px;
+    height: 200px;
+}
+
+a, button, img, svg {
     cursor: none; /* Ensure links have a pointer cursor */
 }
