@@ -56,16 +56,16 @@ const Faq = () => {
   return (
     <section id='faq' className='max-[768px]:pt-[60px] pt-[95px]'>
       <div className="relative w-full flex items-start justify-center">
-        <div className="relative z-10 text-left mx-4 md:mx-8 lg:mx-12 xl:mx-20 w-full max-w-[1280px]">
-          <h1 className="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
+        <div className="relative z-10 text-left mx-4 md:mx-8 lg:mx-12 xl:mx-20 w-full max-w-[1280px] 3xl:max-w-[2000px]">
+          <h1 className="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl m-0">
             $ ./<span id="heading-rules" className="text-white">FAQ</span>
           </h1>
           <div className="relative z-10 w-auto p-6 rounded-lg">
             <div className="sm:mt-4">
               <div id="accordionFaq">
                 {faqData.map((faq, index) => (
-                  <div key={index} className="mb-2 sm:mb-4">
-                    <h1 className="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
+                  <div key={index} className="mb-2 sm:mb-4 3xl:mb-8">
+                    <h1 className="text-white text-xl sm:text-2xl xl:text-3xl 3xl:text-5xl m-0 flex">
                       <button
                         onClick={() => handleToggle(index)}
                         className={`faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition hover:z-[2] focus:z-[3] focus:outline-none ${openIndex === index ? "text-[#169B81]" : ""}`}
@@ -78,7 +78,7 @@ const Faq = () => {
                     <div
                       className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[1000px]' : 'max-h-0'}`}
                     >
-                      <div className="text-[#D6D6D6] text-left text-xl sm:text-2xl pl-8 sm:pl-10 2xl:pl-12 mt-2">
+                      <div className="text-[#D6D6D6] text-left text-xl sm:text-2xl 3xl:text-4xl pl-8 sm:pl-10 2xl:pl-12 mt-2">
                         {faq.answer}
                       </div>
                     </div>

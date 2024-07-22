@@ -10,6 +10,10 @@ export default {
       'vt323':["VT323", 'monospace' ],
       },  
 
+      screens: {
+        '3xl': "2560px",
+      },
+
       colors: {
         red: {
           DEFAULT: "rgba(231, 52, 39, 1)",

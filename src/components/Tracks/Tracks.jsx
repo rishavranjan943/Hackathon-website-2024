@@ -38,6 +38,9 @@ const Tracks = () => {
     const handleCardClick = (trackId) => {
         setSelectedTrack(trackId);
     };
+
+    // todo
+    let cardWidth = (window.innerWidth < 2560) ? 164 : 220;
     
     var slider = document.getElementById('slider');
     const moveRight = () => {
@@ -81,14 +84,14 @@ const Tracks = () => {
         }}>
             {/* <img src={stars} className=" z-0 absolute pointer-events-none w-screen opacity-50"></img> */}
             <img src={trackData[selectedTrack - 1].image} alt="" className='z-1 absolute pointer-events-none left-0 right-0 mx-auto max-w-full xl:-translate-y-48 opacity-50'/>
-            <div className='text-white max-w-[1280px] md:mx-8 lg:mx-12 xl:mx-auto z-2'>
-                <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl text-[#9E9E9E]'>$ ls -a <span className='text-white'>TRACKS</span></h1>
+            <div className='text-white max-w-[1280px] 3xl:max-w-[2000px] md:mx-8 lg:mx-12 xl:mx-auto z-2'>
+                <h1 className='py-6 md:text-left text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]'>$ ls -a <span className='text-white'>TRACKS</span></h1>
                 <div className='lg:flex'>   
                     <div className="track-section pl-12 xl:w-1/2 mr-5 mb-5 xl:mb-0" >
                         {selectedTrack ? (
                             <div className='track'>
-                                <h2 className='text-5xl md:text-7xl xl:text-8xl my-4 md:my-12'>{trackData[selectedTrack - 1].title}</h2>
-                                <p className='text-lg md:text-xl xl:text-2xl'>{trackData[selectedTrack - 1].description}</p>
+                                <h2 className='text-5xl md:text-7xl xl:text-8xl 3xl:text-9xl my-4 md:my-12'>{trackData[selectedTrack - 1].title}</h2>
+                                <p className='text-lg md:text-xl xl:text-2xl 3xl:text-4xl'>{trackData[selectedTrack - 1].description}</p>
                             </div>
                         ) : (
                             <p>Select a track to see more information.</p>
@@ -96,10 +99,10 @@ const Tracks = () => {
                     </div>
                     <div className="carousel flex items-center gap-5 h-fit self-end">
                         <img src={left_key} alt="" className='opacity-50 hover:opacity-100'onClick={() => {moveLeft(); if(selectedTrack > 1) handleCardClick(selectedTrack - 1)}}/>
-                        <div className='tracks-wrapper flex gap-5 lg:max-w-[480px] overflow-x-auto scroll-smooth no-scrollbar' id='slider'>
+                        <div className='tracks-wrapper flex gap-5 lg:max-w-[480px] 3xl:max-w-[1000px] overflow-x-auto scroll-smooth no-scrollbar' id='slider'>
                             {trackData.map((track) => (
-                                <div key={track.id} className="card min-w-24 sm:min-w-36 grid place-items-center relative" onClick={() => handleCardClick(track.id)}>
-                                    <img src={track.card} alt="" className='opacity-70'/>
+                                <div key={track.id} className="card min-w-24 sm:min-w-36 3xl:min-w-40 grid place-items-center relative" onClick={() => handleCardClick(track.id)}>
+                                    <img src={track.card} alt="" className='opacity-70 3xl:min-w-40'/>
                                     <h4 className='absolute text-lg md:text-2xl left-0 top-0 right-0 bottom-0 m-auto w h-fit text-center px-4'>{track.title}</h4>
                                 </div>
                             ))}
