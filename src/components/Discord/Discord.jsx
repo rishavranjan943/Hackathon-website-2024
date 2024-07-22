@@ -24,7 +24,7 @@ function Discord() {
     return (
         <div className="section relative max-[768px]:pt-[40px] pt-[55px]" id="footer">
             <div
-                className="absolute  h-screen object-cover opacity-70 inset-1"
+                className="absolute top-[-50px] opacity-70 h-screen object-cover inset-1"
                 style={{
                     backgroundImage: `url(${stars})`,
                     backgroundPosition: `${50+ bgPosition.x}% ${50 + bgPosition.y}%`,

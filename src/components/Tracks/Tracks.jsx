@@ -41,10 +41,9 @@ const Tracks = () => {
     
     var slider = document.getElementById('slider');
     const moveRight = () => {
-        let brand=slider.getElementsByClassName('card')[0];
-        console.log(selectedTrack);
+        // console.log(selectedTrack);
 
-        slider.scrollLeft += 164;
+        slider.scrollLeft = 164 * (selectedTrack);
         if(selectedTrack == 6) {
             setTimeout(() => {
                 handleCardClick(1);
@@ -52,6 +51,11 @@ const Tracks = () => {
             }, 500);
         }
     }
+
+    const moveLeft = () => {
+        slider.scrollLeft = 164 * (selectedTrack - 2);
+    }
+
 
     useEffect(() => {
 
@@ -91,7 +95,7 @@ const Tracks = () => {
                         )}
                     </div>
                     <div className="carousel flex items-center gap-5 h-fit self-end">
-                        <img src={left_key} alt="" className='opacity-50 hover:opacity-100'onClick={() => {document.querySelector('.tracks-wrapper').scrollLeft -= 164; if(selectedTrack > 1) handleCardClick(selectedTrack - 1)}}/>
+                        <img src={left_key} alt="" className='opacity-50 hover:opacity-100'onClick={() => {moveLeft(); if(selectedTrack > 1) handleCardClick(selectedTrack - 1)}}/>
                         <div className='tracks-wrapper flex gap-5 lg:max-w-[480px] overflow-x-auto scroll-smooth no-scrollbar' id='slider'>
                             {trackData.map((track) => (
                                 <div key={track.id} className="card min-w-24 sm:min-w-36 grid place-items-center relative" onClick={() => handleCardClick(track.id)}>

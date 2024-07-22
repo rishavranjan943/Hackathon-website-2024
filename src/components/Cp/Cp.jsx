@@ -41,8 +41,8 @@ const SimpleSlider = ({ images, direction }) => {
       const { clientX, clientY } = e;
       const innerWidth = window.innerWidth;
       const innerHeight = window.innerHeight;
-      const posX = (clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
-      const posY = (clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
+      const posX = (clientX / innerWidth - 0.5) * 30; // Adjust the multiplier for sensitivity
+      const posY = (clientY / innerHeight - 0.5) * 30; // Adjust the multiplier for sensitivity
       setBgPosition({ x: posX, y: posY });
     };
 
