@@ -6,6 +6,7 @@ import DevfolioLogo from "../assets/images/LandingPage/DevfolioLogo.svg";
 import TimerSection from "./TimerSection";
 import Schedule from "../components/Schedule/Schedule";
 import ScrollButton from "../assets/images/LandingPage/ScrollButton.svg";
+import './LandingPage.css';
 
 function LandingPage() {
   const [bgSize, setBgSize] = useState("10%");
@@ -88,7 +89,7 @@ function LandingPage() {
           </div>
           <div className="flex text-center justify-center mt-5 xl:mt-1 ml-5 mr-5 min-[3840px]:m-11">
             <div
-              className="bg-top bg-no-repeat flex items-end flex-col justify-center md:h-[80%] bg-cover "
+              className="home-mascot bg-top bg-no-repeat flex items-end flex-col justify-center md:h-[80%] bg-cover"
               style={{
                 backgroundImage: `url(${HomeMascot})`,
                 backgroundSize: bgSize,

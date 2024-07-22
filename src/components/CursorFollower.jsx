@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './CursorFollower.css';
+// import './CursorFollower.css';
 
 const CursorFollower = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });

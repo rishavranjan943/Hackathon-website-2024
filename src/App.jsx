@@ -8,7 +8,7 @@ import Tracks from './components/Tracks/Tracks'
 import Sponsors from './components/Sponsors/Sponsors'
 import Faq from './components/Faq/Faq'
 import Cp from './components/Cp/Cp'
-import CursorFollower from './components/CursorFollower';
+// import CursorFollower from './components/CursorFollower';
 
 import LandingPage from './pages/LandingPage'
 
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-       <CursorFollower />
+       {/* <CursorFollower /> */}
       <Navbar />
       <LandingPage/>
       <Tracks />
