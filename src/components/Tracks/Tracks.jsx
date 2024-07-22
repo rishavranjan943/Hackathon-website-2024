@@ -27,13 +27,34 @@ const Tracks = () => {
         { id: 5, title: 'WEB3', description: 'As part of this track, participants may explore decentralized finance (DeFi) applications, enabling seamless peer-to-peer financial transactions, decentralized marketplaces, and novel governance models. One can design secure and transparent systems that empower users with greater control over their digital assets. ', image: web3, card: web3_card},
         { id: 6, title: 'OPEN INNOVATION', description: 'The Open Innovation track offers limitless scope for creativity, encouraging participants to explore diverse ideas and solve real-world problems outside conventional boundaries. Let your imagination run wild and propose exciting solutions that can reform the world. ', image: open_innovation, card: open_innovation_card},
         // Add more tracks here...
+        { id: 7, title: 'MEDICAL', description: 'In this track, participants work on developing software solutions related to healthcare and medicine. They might build applications that help patients manage their health, or tools that assist healthcare providers in diagnosing and treating patients.', image: medical, card: medical_card },
+        { id: 8, title: 'HARDWARE', description: 'The Hardware track emphasizes hands-on implementation and encourages teams to create detailed and innovative prototypes that showcase the functionality and feasibility of their ideas. Participants are encouraged to explore diverse challenges and develop hardware-based solutions that address these issues effectively. ', image: hardware, card: hardware_card},
+        { id: 9, title: 'WILDLIFE', description: 'This track focuses on building software solutions that promote sustainability and protect the environment. Participants might create applications that help reduce waste, conserve energy, prevent illegal wildlife trade, or even provide early warning systems for natural calamities that can impact wildlife and their habitats. ', image: wildlife, card: wildlife_card},
+        { id: 10, title: 'EDUCATION', description: 'The education track encourages participants to build software solutions that enhance the quality of education. Participants might develop applications that provide personalized learning experiences, improve access to education for disadvantaged communities, or help teachers and students collaborate more effectively. ', image: education, card: education_card},
+        { id: 11, title: 'WEB3', description: 'As part of this track, participants may explore decentralized finance (DeFi) applications, enabling seamless peer-to-peer financial transactions, decentralized marketplaces, and novel governance models. One can design secure and transparent systems that empower users with greater control over their digital assets. ', image: web3, card: web3_card},
+        { id: 12, title: 'OPEN INNOVATION', description: 'The Open Innovation track offers limitless scope for creativity, encouraging participants to explore diverse ideas and solve real-world problems outside conventional boundaries. Let your imagination run wild and propose exciting solutions that can reform the world. ', image: open_innovation, card: open_innovation_card},
     ];
 
     const handleCardClick = (trackId) => {
         setSelectedTrack(trackId);
     };
+    
+    var slider = document.getElementById('slider');
+    const moveRight = () => {
+        let brand=slider.getElementsByClassName('card')[0];
+        console.log(selectedTrack);
+
+        slider.scrollLeft += 164;
+        if(selectedTrack == 6) {
+            setTimeout(() => {
+                handleCardClick(1);
+                slider.scrollTo({left: 0, behavior: 'instant'});
+            }, 500);
+        }
+    }
 
     useEffect(() => {
+
         const handleMouseMove = (e) => {
             const { innerWidth, innerHeight } = window;
             const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
@@ -61,7 +82,7 @@ const Tracks = () => {
                 <div className='lg:flex'>   
                     <div className="track-section pl-12 xl:w-1/2 mr-5 mb-5 xl:mb-0" >
                         {selectedTrack ? (
-                            <div>
+                            <div className='track'>
                                 <h2 className='text-5xl md:text-7xl xl:text-8xl my-4 md:my-12'>{trackData[selectedTrack - 1].title}</h2>
                                 <p className='text-lg md:text-xl xl:text-2xl'>{trackData[selectedTrack - 1].description}</p>
                             </div>
@@ -70,8 +91,8 @@ const Tracks = () => {
                         )}
                     </div>
                     <div className="carousel flex items-center gap-5 h-fit self-end">
-                        <img src={left_key} alt="" className='opacity-50 hover:opacity-100'onClick={() => {document.querySelector('.tracks-wrapper').scrollLeft -= 158}}/>
-                        <div className='tracks-wrapper flex gap-5 lg:max-w-[480px] overflow-x-auto scroll-smooth no-scrollbar'>
+                        <img src={left_key} alt="" className='opacity-50 hover:opacity-100'onClick={() => {document.querySelector('.tracks-wrapper').scrollLeft -= 164; if(selectedTrack > 1) handleCardClick(selectedTrack - 1)}}/>
+                        <div className='tracks-wrapper flex gap-5 lg:max-w-[480px] overflow-x-auto scroll-smooth no-scrollbar' id='slider'>
                             {trackData.map((track) => (
                                 <div key={track.id} className="card min-w-24 sm:min-w-36 grid place-items-center relative" onClick={() => handleCardClick(track.id)}>
                                     <img src={track.card} alt="" className='opacity-70'/>
@@ -79,7 +100,7 @@ const Tracks = () => {
                                 </div>
                             ))}
                         </div>
-                        <img src={right_key} alt="" className='opacity-50 hover:opacity-100' onClick={() => {document.querySelector('.tracks-wrapper').scrollLeft += 158}}/>
+                        <img src={right_key} alt="" className='opacity-50 hover:opacity-100' onClick={() => {moveRight(); handleCardClick((selectedTrack % 6) + 1)}}/>
                     </div>
                 </div>
             </div>
