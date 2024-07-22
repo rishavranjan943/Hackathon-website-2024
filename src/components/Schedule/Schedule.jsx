@@ -9,7 +9,9 @@ function Schedule() {
 
     useEffect(() => {
         if (timelineWrapperRef.current) {
+            let leftPosition = 0;
             if (window.innerWidth < 768) {
+                leftPosition = 20;
                 document.querySelector('.timeline-wrapper').scrollTo({ left: 20, behavior: 'smooth' });
             }
             const timelineElementWidth = 338;
@@ -44,10 +46,15 @@ function Schedule() {
                     .scrollTo({ left: leftPosition, behavior: 'smooth' });
             });
 
+            let maxScrollLeft = timelineElementWidth * 5;
+            if(timelineWrapperWidth >= timelineElementWidth * 2) maxScrollLeft = timelineElementWidth * 4;
+            if(timelineWrapperWidth >= timelineElementWidth * 3) maxScrollLeft = timelineElementWidth * 3;
+
             document.querySelector('.next').addEventListener('click', () => {
                 const timelineWrapperWidth =
                     document.querySelector('.timeline-wrapper').clientWidth;
-                const leftPosition = document.querySelector('.timeline-wrapper').scrollLeft + timelineElementWidth;
+                leftPosition = leftPosition + timelineElementWidth;
+                if(leftPosition >= maxScrollLeft) leftPosition = (window.innerWidth < 768) ? 20 : 0;
                 document
                     .querySelector('.timeline-wrapper')
                     .scrollTo({ left: leftPosition, behavior: 'smooth' });
