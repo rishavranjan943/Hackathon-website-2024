@@ -19,18 +19,18 @@ const topImages = [
 const bottomImages = [
   { src: "/images/iei.svg", alt: "iei" },
   { src: "/images/iiitians.svg", alt: "iiitians" },
-  { src: "/images/rc.svg", alt: "rc" },
+  // { src: "/images/rc.svg", alt: "rc" },
   { src: "/images/thc.svg", alt: "thc" },
   { src: "/images/gdscm.svg", alt: "gdscm" },
-  { src: "/images/vuchvilla.svg", alt: "vv" },
+  // { src: "/images/vuchvilla.svg", alt: "vv" },
 
     // double for infinite loop
   { src: "/images/iei.svg", alt: "iei" },
   { src: "/images/iiitians.svg", alt: "iiitians" },
-  { src: "/images/rc.svg", alt: "rc" },
+  // { src: "/images/rc.svg", alt: "rc" },
   { src: "/images/thc.svg", alt: "thc" },
   { src: "/images/gdscm.svg", alt: "gdscm" },
-  { src: "/images/vuchvilla.svg", alt: "vv" },
+  // { src: "/images/vuchvilla.svg", alt: "vv" },
 ];
 
 const SimpleSlider = ({ images, direction }) => {

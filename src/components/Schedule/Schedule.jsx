@@ -120,7 +120,7 @@ function Schedule() {
                                     className="flex flex-col justify-center items-center min-w-[330px] 3xl:min-w-[660px] m-1"
                                 >
                                     <h1 className="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl 3xl:text-6xl">
-                                        July 30
+                                        Aug 10
                                     </h1>
                                     <h3 className="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl 3xl:text-4xl">
                                         12:00 AM
