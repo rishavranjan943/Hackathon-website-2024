@@ -8,14 +8,16 @@ import oxDayLogo from '../../assets/images/sponsors/0xday.png';
 import polygonLogo from '../../assets/images/sponsors/polygon.png';
 import axureLogo from '../../assets/images/sponsors/axure.png';
 import interviewCakeLogo from '../../assets/images/sponsors/interviewcake.png';
+import interviewBuddyLogo from '../../assets/images/sponsors/interviewbuddy.png';
 import aopsLogo from '../../assets/images/sponsors/aops.png';
 import certificateLogo from '../../assets/images/sponsors/givemycertificate.png';
 import avalancheLogo from '../../assets/images/sponsors/avalanche.png';
 import devfolioLogo from '../../assets/images/sponsors/devfolio.png';
+import githubLogo from '../../assets/images/sponsors/github.png';
 import echo3DLogo from '../../assets/images/sponsors/echo3D.png';
 import gianLogo from '../../assets/images/sponsors/gian.svg';
 import riseLogo from '../../assets/images/sponsors/rise.png';
-// import jinaLogo from '../../assets/images/sponsors/jina.png';
+import quillLogo from '../../assets/images/sponsors/quill.webp';
 import ethIndiaLogo from '../../assets/images/sponsors/ethIndia.png';
 
 const Sponsors = () => {
@@ -77,9 +79,10 @@ const Sponsors = () => {
                 {/* DIAMOND SPONSOR */}
                 <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#5FA6FF] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
                     <h1 className='font-vt323 font-medium text-[#5FA6FF] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>DIAMOND</h1>
-                    <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
+                    <div className='flex flex-wrap max-sm:flex-col items-center justify-center gap-5 sm:gap-20 max-sm:mb-0'>
                         {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
                         <Link to='https://0x.day/'><img src={oxDayLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[19vw] 3xl:w-[20rem]' /></Link>
+                        <Link to='https://github.com/'><img src={githubLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[19vw] 3xl:w-[20rem]' /></Link>
                     </div>
                 </div>
 
@@ -121,6 +124,7 @@ const Sponsors = () => {
                         <Link to='https://www.axure.com/'><img src={axureLogo} alt="echo3D" className='w-[30vw] sm:w-[18vw] md:w-[15vw] 3xl:w-[20rem]' /></Link>
                         <Link to='https://artofproblemsolving.com/'><img src={aopsLogo} alt="echo3D" className='w-[35vw] sm:w-[18vw] md:w-[15vw] 3xl:w-[20rem]' /></Link>
                         <Link to='https://www.interviewcake.com/'><img src={interviewCakeLogo} alt="echo3D" className='w-[40vw] sm:w-[18vw] md:w-[15vw] 3xl:w-[20rem]' /></Link>
+                        <Link to='https://interviewbuddy.net/'><img src={interviewBuddyLogo} alt="echo3D" className='w-[40vw] sm:w-[18vw] md:w-[15vw] 3xl:w-[20rem]' /></Link>
                     </div>
                 </div>
 
@@ -144,11 +148,20 @@ const Sponsors = () => {
                 </div>
 
                 {/* CERTIFICATE PARTNER */}
-                <div className='pt-3 3xl:pt-10 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                <div className='pt-3 3xl:pt-10 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#e29b29] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
                     <h1 className='font-vt323 font-medium text-[#e29b29] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>CERTIFICATE PARTNER</h1>
                     <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
                         {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
                         <Link to='https://givemycertificate.com/'><img src={certificateLogo} alt="giveMyCertificateLogo" className='w-[40vw] sm:w-[18vw] md:w-[18vw] 3xl:w-[30rem]' /></Link>
+                    </div>
+                </div>
+
+                {/* SECURITY PARTNER */}
+                <div className='pt-3 3xl:pt-10 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                    <h1 className='font-vt323 font-medium text-[#9e9e9e] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>SECURITY PARTNER</h1>
+                    <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
+                        {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
+                        <Link to='https://www.quillaudits.com/'><img src={quillLogo} alt="giveMyCertificateLogo" className='w-[40vw] sm:w-[18vw] md:w-[18vw] 3xl:w-[30rem]' /></Link>
                     </div>
                 </div>
             </div>
