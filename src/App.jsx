@@ -11,6 +11,7 @@ import Cp from './components/Cp/Cp'
 // import CursorFollower from './components/CursorFollower';
 
 import LandingPage from './pages/LandingPage'
+import StatusCode0 from './components/StatusCode0/StatusCode0'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
        {/* <CursorFollower /> */}
       <Navbar />
       <LandingPage/>
+      <StatusCode0 />
       <Tracks />
       <Sponsors />
       <Cp/>
