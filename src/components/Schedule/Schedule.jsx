@@ -11,36 +11,23 @@ function Schedule() {
         if (timelineWrapperRef.current) {
             let leftPosition = 0;
             if (window.innerWidth < 768) {
-                leftPosition = 20;
-                document.querySelector('.timeline-wrapper').scrollTo({ left: 20, behavior: 'smooth' });
+                leftPosition = 60;
+                document.querySelector('.timeline-wrapper').scrollTo({ left: leftPosition, behavior: 'smooth' });
             }
-            const timelineElementWidth = 338;
+            const timelineElementWidth = 340;
             const timelineWrapperWidth =
                 document.querySelector('.timeline-wrapper').clientWidth;
-            const defaultShiftWidth =
-                timelineWrapperWidth < timelineElementWidth
-                    ? timelineElementWidth / 4
-                    : 0;
+            // const defaultShiftWidth =
+            //     timelineWrapperWidth < timelineElementWidth
+            //         ? timelineElementWidth / 4
+            //         : 0;
             document.querySelector('.timeline-wrapper')
-                .scrollBy({ left: defaultShiftWidth, behavior: 'smooth' });
+                .scrollBy({ left: leftPosition, behavior: 'smooth' });
 
             document.querySelector('.prev').addEventListener('click', () => {
                 const timelineWrapperWidth =
                     document.querySelector('.timeline-wrapper').clientWidth;
-                const defaultShiftWidth =
-                    timelineWrapperWidth < timelineElementWidth
-                        ? timelineElementWidth / 4
-                        : 0;
-                const leftPosition =
-                    defaultShiftWidth +
-                    Math.max(
-                        0,
-                        Math.floor(
-                            (document.querySelector('.timeline-wrapper').scrollLeft -
-                                timelineElementWidth) /
-                            timelineElementWidth
-                        ) * timelineElementWidth
-                    );
+                leftPosition = leftPosition - timelineElementWidth;
                 document
                     .querySelector('.timeline-wrapper')
                     .scrollTo({ left: leftPosition, behavior: 'smooth' });
@@ -54,7 +41,8 @@ function Schedule() {
                 const timelineWrapperWidth =
                     document.querySelector('.timeline-wrapper').clientWidth;
                 leftPosition = leftPosition + timelineElementWidth;
-                if(leftPosition >= maxScrollLeft) leftPosition = (window.innerWidth < 768) ? 20 : 0;
+                if(leftPosition >= maxScrollLeft) leftPosition = (window.innerWidth < 768) ? 60 : 0;
+                console.log(leftPosition);
                 document
                     .querySelector('.timeline-wrapper')
                     .scrollTo({ left: leftPosition, behavior: 'smooth' });
