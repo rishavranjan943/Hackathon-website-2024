@@ -76,6 +76,14 @@ const Sponsors = () => {
                     </div>
                 </div> */}
 
+                {/* TITLE SPONSOR */}
+                <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#e29b29] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                    <h1 className='font-vt323 font-medium text-[#e29b29] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>TITLE SPONSOR</h1>
+                    <div className='flex flex-wrap max-sm:flex-col items-center justify-center gap-5 sm:gap-20 max-sm:mb-0'>
+                        <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
+                    </div>
+                </div>
+
                 {/* DIAMOND SPONSOR */}
                 <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#5FA6FF] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
                     <h1 className='font-vt323 font-medium text-[#5FA6FF] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>DIAMOND</h1>
