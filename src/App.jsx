@@ -12,7 +12,7 @@ import Cp from './components/Cp/Cp'
 
 import LandingPage from './pages/LandingPage'
 import StatusCode0 from './components/StatusCode0/StatusCode0'
-
+import Prizes from './components/Prizes/Prizes'
 function App() {
 
   return (
@@ -21,6 +21,7 @@ function App() {
       <Navbar />
       <LandingPage/>
       <StatusCode0 />
+      <Prizes/>
       <Tracks />
       <Sponsors />
       <Cp/>
