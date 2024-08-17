@@ -25,7 +25,7 @@ const Prizes = () => {
     return (
         <section
             id='tracks'
-            className="pt-[30px] md:pt-[80px] relative mb-10 px-5 bg-no-repeat"
+            className="pt-[30px] md:pt-[80px] relative px-5 bg-no-repeat"
             style={{
                 backgroundImage: `url(${stars})`,
                 backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
@@ -44,15 +44,15 @@ const Prizes = () => {
                     $ vi <span className="text-white">PRIZES</span>.yml
                 </h1>
                 <div className="flex justify-center items-center h-full">
-                    <div className="p-10 text-center w-[80vw] mx-auto">
+                    <div className="px-4 sm:p-10 text-left w-[90vw] sm:w-[80vw] mx-auto">
                         {/* Main Rectangle */}
-                        <div className="flex justify-between border-8 border-dashed border-[#0384fc] w-full h-auto mb-4 overflow-hidden">
+                        <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-[#0384fc] w-full h-auto mb-4 overflow-hidden">
                             <div className="flex items-center">
                                 {/* Text on the left side */}
-                                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  whitespace-nowrap lg:p-10 sm:pl-4 pl-1 tracking-wide">
-                                    &nbsp;FIRST PRIZE
-                                    <br />
-                                    <span className="text-blue-500">$</span> 3600
+                                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  whitespace-nowrap lg:p-10 sm:pl-4 pl-1 tracking-wide">
+                                    <h2>&nbsp;FIRST PRIZE</h2>
+                                    <h2 className=' sm:pl-6 pl-2'><span className="text-blue-500">$</span>3600<span className='text-gray-300'>*</span></h2>
+                                    <h3 className='max-lg:hidden sm:pl-6 pl-1 text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-wrap max-w-[80%]'>*Inclusive of &#8377;35000 cash + other swags and benefits</h3>
                                 </h1>
                             </div>
                             <div className="flex items-end h-full">
@@ -64,13 +64,13 @@ const Prizes = () => {
                         </div>
 
                         {/* Two Rectangles Below Main */}
-                        <div className="flex flex-col xs:flex-row w-full justify-between mb-4 gap-2">
-                            <div className="flex justify-between border-8 border-dashed border-purple w-full h-auto mb-4 overflow-hidden">
-                                <div className="flex items-center">
-                                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  whitespace-nowrap p-2 pl-1 tracking-wide">
-                                        &nbsp;SECOND PRIZE
-                                        <br />
-                                        <span className="text-blue-500">$</span> 2950
+                        <div className="flex flex-col xs:flex-row w-full justify-between mb-4 xl:mb-0 gap-2">
+                            <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-purple w-full h-auto mb-4 lg:py-4 2xl-py-8 overflow-hidden">
+                                <div className="flex items-center w-fit">
+                                    <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  whitespace-nowrap p-2 pl-1 tracking-wide">
+                                        <h2 className='w-fit'>&nbsp;SECOND PRIZE</h2>
+                                        <h2 className=' sm:pl-6 pl-2 w-fit'><span className="text-purple">$</span>2950<span className='text-gray-300'>*</span></h2>
+                                        <h3 className='max-lg:hidden sm:pl-4 pl-1 text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-wrap max-w-[80%]'>*Inclusive of &#8377;25000 cash + other swags and benefits</h3>
                                     </h1>
                                 </div>
                                 <div className="flex items-end h-24 xs:h-auto">
@@ -81,12 +81,12 @@ const Prizes = () => {
                                 </div>
                             </div>
 
-                            <div className="flex justify-between border-8 border-dashed border-purple w-full h-auto mb-4 overflow-hidden">
+                            <div className="flex justify-between border-[6px] max-lg:border-4 border-dashed border-purple w-full h-auto mb-4 lg:py-4 2xl:py-8 overflow-hidden">
                                 <div className="flex items-center">
-                                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
-                                        &nbsp;THIRD PRIZE
-                                        <br />
-                                        <span className="text-blue-500">$</span> 2750
+                                    <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
+                                        <h2>&nbsp;THIRD PRIZE</h2>
+                                        <h2 className=' sm:pl-6 pl-2'><span className="text-purple">$</span>2750<span className='text-gray-300'>*</span></h2>
+                                        <h3 className='max-lg:hidden sm:pl-4 pl-1 text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-wrap max-w-[80%]'>*Inclusive of &#8377;15000 cash + other swags and benefits</h3>
                                     </h1>
                                 </div>
                                 <div className="flex items-end h-24 xs:h-auto">
@@ -101,109 +101,105 @@ const Prizes = () => {
                         {/* Two Thin Rectangles Below */}
                         <div className="flex flex-col w-full gap-2">
                             <div className="flex-1 mb-4 flex flex-col transition-all duration-300">
-                                <div className="border-8 border-dashed border-[#E29B29] mb-4 relative transition-all duration-300 group">
-                                    <div className="flex justify-between items-center w-full h-auto p-3">
-                                        <div className="text-left flex items-center">
-                                            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2  tracking-wide">
-                                                AVALANCHE TRACK
-                                            </h1>
-                                            <img
-                                                src={small_trophy}
-                                                alt="Avalanche Icon"
-                                                className="w-14 h-14 ml-3"
-                                            />
-                                        </div>
-                                        <div className="text-right pr-2">
-                                            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
-                                                <span className="text-blue-500">$</span> 1000
-                                            </h1>
-                                        </div>
-                                    </div>
-                                    {/* Hidden text that shows on hover */}
-                                    <div className="transition-all duration-300 overflow-hidden group-hover:max-h-40 max-h-0">
-                                        <p className="text-sm xs:text-base md:text-lg lg:text-xl xl:text-2xl">
-                                            For more details, check out our  <a href="https://statuscode-1.devfolio.co/">devfolio page</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="border-8 border-dashed border-[#E29B29] mb-4 relative transition-all duration-300 group">
-                                    <div className="flex justify-between items-center w-full h-auto p-3">
-                                        <div className="text-left flex items-center">
-                                            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2  tracking-wide">
-                                                RISE TRACK
-                                            </h1>
-                                            <img
-                                                src={small_trophy}
-                                                alt="Avalanche Icon"
-                                                className="w-14 h-14 ml-3"
-                                            />
-                                        </div>
-                                        <div className="text-right pr-2">
-                                            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
-                                                {/* <span className="text-blue-500">$</span> 2000 */}
-                                            </h1>
-                                        </div>
-                                    </div>
-                                    {/* Hidden text that shows on hover */}
-                                    <div className="transition-all duration-300 overflow-hidden group-hover:max-h-40 max-h-0">
-                                        <p className="text-sm xs:text-base md:text-lg lg:text-xl xl:text-2xl">
-                                            For more details, check out <a href='https://drive.google.com/file/d/1kAX4GPCz4tu1u--Qb2oSAMEJOsbdyoPy/view'>problem statement</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="border-8 border-dashed border-[#E29B29] mb-4 relative transition-all duration-300 group">
-                                    <div className="flex justify-between items-center w-full h-auto p-3">
-                                        <div className="text-left flex items-center">
-                                            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2  tracking-wide">
-                                                GIAN TRACK
-                                            </h1>
-                                            <img
-                                                src={small_trophy}
-                                                alt="Avalanche Icon"
-                                                className="w-14 h-14 ml-3"
-                                            />
-                                        </div>
-                                        <div className="text-right pr-2">
-                                            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
-                                                <span className="text-blue-500">$</span> 360
-                                            </h1>
-                                        </div>
-                                    </div>
-                                    {/* Hidden text that shows on hover */}
-                                    <div className="transition-all duration-300 overflow-hidden group-hover:max-h-40 max-h-0">
-                                        <p className="text-sm xs:text-base md:text-lg lg:text-xl xl:text-2xl">
-                                            For more details, check out <a href='https://drive.google.com/file/d/1VwnsCryNCkqx0Ij_iZW5KmTPjL_Dn9mF/view?usp=sharing'>problem statement</a>
-                                        </p>
-                                    </div>
-                                </div>
+                                
                                 <div className="flex flex-col xs:flex-row w-full  gap-2">
                                     <div className="w-full md:w-1/2 lg:w-1/2 mb-4">
-                                        <div className="border-8 border-dashed border-[#E29B29] relative transition-all duration-300">
+                                        <div className="border-[6px] max-lg:border-4 border-dashed border-[#E29B29] relative transition-all duration-300">
                                             <div className="flex justify-between items-center w-full h-auto p-3">
                                                 <div className="text-left flex items-center">
-                                                    <h1 className="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
+                                                        AVALANCHE TRACK
+                                                    </h1>
+                                                </div>
+                                                <div className="text-right pr-2">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
+                                                        <span className="text-[#E29B29]">$</span>1000
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="w-full md:w-1/2 lg:w-1/2 mb-4">
+                                        <div className="border-[6px] max-lg:border-4 border-dashed border-[#E29B29] relative transition-all duration-300">
+                                            <div className="flex justify-between items-center w-full h-auto p-3">
+                                                <div className="text-left flex items-center">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
+                                                        GIAN TRACK
+                                                    </h1>
+                                                </div>
+                                                <div className="text-right pr-2">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
+                                                        <span className="text-[#E29B29]">$</span>360
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col xs:flex-row w-full  gap-2">
+                                    <div className="w-full md:w-1/2 lg:w-1/2 mb-4">
+                                        <div className="border-[6px] max-lg:border-4 border-dashed border-[#E29B29] relative transition-all duration-300">
+                                            <div className="flex justify-between items-center w-full h-auto p-3">
+                                                <div className="text-left flex items-center">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
+                                                        RISE FOUNDATION TRACK
+                                                    </h1>
+                                                </div>
+                                                <div className="text-right pr-2">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
+                                                        <span className="text-[#E29B29]">$</span>???
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="w-full md:w-1/2 lg:w-1/2 mb-4">
+                                        <div className="border-[6px] max-lg:border-4 border-dashed border-[#E29B29] relative transition-all duration-300">
+                                            <div className="flex justify-between items-center w-full h-auto p-3">
+                                                <div className="text-left flex items-center">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
+                                                        WEB3 BOUNTIES
+                                                    </h1>
+                                                </div>
+                                                <div className="text-right pr-2">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
+                                                        <span className="text-[#E29B29]">$</span>???
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col xs:flex-row w-full  gap-2">
+                                    <div className="w-full md:w-1/2 lg:w-1/2 mb-4">
+                                        <div className="border-[6px] max-lg:border-4 border-dashed border-[#E29B29] relative transition-all duration-300">
+                                            <div className="flex justify-between items-center w-full h-auto p-3">
+                                                <div className="text-left flex items-center">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
                                                         BEST FRESHER TEAM
                                                     </h1>
                                                 </div>
                                                 <div className="text-right pr-2">
-                                                    <h1 className="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
-                                                        <span className="text-blue-500">$</span> 25
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
+                                                        <span className="text-[#E29B29]">$</span>25
                                                     </h1>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="w-full md:w-1/2 lg:w-1/2 mb-4">
-                                        <div className="border-8 border-dashed border-[#E29B29] relative transition-all duration-300">
+                                        <div className="border-[6px] max-lg:border-4 border-dashed border-[#E29B29] relative transition-all duration-300">
                                             <div className="flex justify-between items-center w-full h-auto p-3">
                                                 <div className="text-left flex items-center">
-                                                    <h1 className="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
                                                         BEST ALL GIRLS TEAM
                                                     </h1>
                                                 </div>
                                                 <div className="text-right pr-2">
-                                                    <h1 className="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
-                                                        <span className="text-blue-500">$</span> 25
+                                                    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
+                                                        <span className="text-[#E29B29]">$</span>25
                                                     </h1>
                                                 </div>
                                             </div>
@@ -211,10 +207,8 @@ const Prizes = () => {
                                     </div>
                                 </div>
 
-
-
-
-
+                                <div className='sm:hidden text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl mb-2'>*Inclusive of cash + swags + other sponsor benefits</div>
+                                <div className='text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>:/Check out our <a className='text-gray-400 hover:text-white' href='https://statuscode-1.devfolio.co/prizes'>devfolio page</a> for the detailed track prize details.</div>
 
                             </div>
                         </div>
