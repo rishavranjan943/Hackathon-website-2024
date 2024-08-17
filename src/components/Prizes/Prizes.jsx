@@ -24,7 +24,7 @@ const Prizes = () => {
 
     return (
         <section
-            id='tracks'
+            id='prizes'
             className="pt-[30px] md:pt-[80px] relative px-5 bg-no-repeat"
             style={{
                 backgroundImage: `url(${stars})`,
