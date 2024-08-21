@@ -110,7 +110,7 @@ const Tracks = () => {
                         <img src={right_key} alt="" className='opacity-50 hover:opacity-100' onClick={() => {moveRight(); handleCardClick((selectedTrack % 6) + 1)}}/>
                     </div>
                 </div>
-                <div className='px-12 text-white mt-8 text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl'>Every track winner will get prizes worth <span className=''>$</span>150 including ₹2000 cash, ₹5000 in swags, and additional sponsor benefits</div>
+                <div className='px-12 text-white mt-8 text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl'>Every track winner will get prizes worth <span className=''>$</span>150 including ₹2000 cash prize, swags, and additional sponsor benefits</div>
             </div>
         </section>
     );

@@ -51,7 +51,7 @@ const Prizes = () => {
                                 {/* Text on the left side */}
                                 <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  whitespace-nowrap lg:p-10 sm:pl-4 pl-1 tracking-wide">
                                     <h2>&nbsp;FIRST PRIZE</h2>
-                                    <h2 className=' sm:pl-6 pl-2'><span className="text-blue-500">$</span>3600<span className='text-gray-300'>*</span></h2>
+                                    <h2 className=' sm:pl-6 pl-2'><span className="text-blue-500">&#8377;</span>300000<span className='text-gray-300'>*</span></h2>
                                     <h3 className='max-lg:hidden sm:pl-6 pl-1 text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-wrap max-w-[80%]'>*Inclusive of &#8377;35000 cash + other swags and sponsor benefits</h3>
                                 </h1>
                             </div>
@@ -69,7 +69,7 @@ const Prizes = () => {
                                 <div className="flex items-center w-fit">
                                     <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  whitespace-nowrap p-2 pl-1 tracking-wide">
                                         <h2 className='w-fit'>&nbsp;SECOND PRIZE</h2>
-                                        <h2 className=' sm:pl-6 pl-2 w-fit'><span className="text-purple">$</span>2950<span className='text-gray-300'>*</span></h2>
+                                        <h2 className=' sm:pl-6 pl-2 w-fit'><span className="text-purple">&#8377;</span>245000<span className='text-gray-300'>*</span></h2>
                                         <h3 className='max-lg:hidden sm:pl-4 pl-1 text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-wrap max-w-[80%]'>*Inclusive of &#8377;25000 cash + other swags and sponsor benefits</h3>
                                     </h1>
                                 </div>
@@ -85,7 +85,7 @@ const Prizes = () => {
                                 <div className="flex items-center">
                                     <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
                                         <h2>&nbsp;THIRD PRIZE</h2>
-                                        <h2 className=' sm:pl-6 pl-2'><span className="text-purple">$</span>2750<span className='text-gray-300'>*</span></h2>
+                                        <h2 className=' sm:pl-6 pl-2'><span className="text-purple">&#8377;</span>230000<span className='text-gray-300'>*</span></h2>
                                         <h3 className='max-lg:hidden sm:pl-4 pl-1 text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-wrap max-w-[80%]'>*Inclusive of &#8377;15000 cash + other swags and sponsor benefits</h3>
                                     </h1>
                                 </div>
@@ -143,12 +143,12 @@ const Prizes = () => {
                                             <div className="flex justify-between items-center w-full h-auto p-3">
                                                 <div className="text-left flex items-center">
                                                     <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 tracking-wide">
-                                                        RISE FOUNDATION TRACK
+                                                        RISE FOUNDATION TRACKS
                                                     </h1>
                                                 </div>
                                                 <div className="text-right pr-2">
                                                     <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
-                                                        <span className="text-[#E29B29]">$</span>150
+                                                        <span className="text-[#E29B29]">&#8377;</span>20000
                                                     </h1>
                                                 </div>
                                             </div>
