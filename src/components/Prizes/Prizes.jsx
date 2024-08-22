@@ -148,7 +148,7 @@ const Prizes = () => {
                                                 </div>
                                                 <div className="text-right pr-2">
                                                     <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl whitespace-nowrap lg:p-2 pl-1 tracking-wide">
-                                                        <span className="text-[#E29B29]">&#8377;</span>20000
+                                                        <span className="text-[#E29B29]">$</span>235
                                                     </h1>
                                                 </div>
                                             </div>

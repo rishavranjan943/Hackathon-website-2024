@@ -57,10 +57,10 @@ function Footer() {
                                 </a>
                             <a href="" className="footercontent text-xl md:text-2xl resourcecontent  text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Community Partners<br />
-                                </a>
-                                <a href="" className="footercontent text-xl md:text-2xl resourcecontent text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
-                                    Hackers Guide<br />
-                                </a>  */}
+                                </a> */}
+                                <a href="https://statuscode1.notion.site/Status-Code-1-Hacker-Guide-2e3862d425684151adaa0098defd6ecc" className="footercontent text-xl md:text-2xl resourcecontent text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
+                                    Hacker Guide<br />
+                                </a> 
                             </div>
                             <div className="social text-center xl:text-left">
                                 <h1 className="footerheading footerelements text-center text-2xl md:text-4xl 3xl:text-6xl m-0 mb-2 text-heading-footer">

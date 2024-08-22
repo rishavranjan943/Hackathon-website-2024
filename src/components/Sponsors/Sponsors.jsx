@@ -19,6 +19,10 @@ import gianLogo from '../../assets/images/sponsors/gian.svg';
 import riseLogo from '../../assets/images/sponsors/rise.png';
 import quillLogo from '../../assets/images/sponsors/quill.webp';
 import ethIndiaLogo from '../../assets/images/sponsors/ethIndia.png';
+import blockFlowLogo from '../../assets/images/sponsors/blockflow.png';
+import edugraphLogo from '../../assets/images/sponsors/edugraph.png';
+import texosLogo from  '../../assets/images/sponsors/texos.png';
+import routerLogo from '../../assets/images/sponsors/router.svg';
 
 const Sponsors = () => {
     const [bgSize, setBgSize] = useState("110%");
@@ -87,10 +91,11 @@ const Sponsors = () => {
                 {/* DIAMOND SPONSOR */}
                 <div className='pt-3 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#5FA6FF] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
                     <h1 className='font-vt323 font-medium text-[#5FA6FF] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>DIAMOND</h1>
-                    <div className='flex flex-wrap max-sm:flex-col items-center justify-center gap-5 sm:gap-20 max-sm:mb-0'>
+                    <div className='flex flex-wrap max-sm:flex-col items-center justify-center gap-5 sm:gap-15 max-sm:mb-0'>
                         {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
                         <Link to='https://0x.day/'><img src={oxDayLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[19vw] 3xl:w-[20rem]' /></Link>
                         <Link to='https://github.com/'><img src={githubLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[19vw] 3xl:w-[20rem]' /></Link>
+                        <Link to='https://tezos.com/'><img src={texosLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[19vw] 3xl:w-[20rem]' /></Link>
                     </div>
                 </div>
 
@@ -101,6 +106,7 @@ const Sponsors = () => {
                         {/* <img src={VectorLogo} alt="vector" className='w-[25vw] h-[5vw] sm:w-[20vw] sm:h-[4vw]' /> */}
                         <Link to='https://devfolio.co/'><img src={devfolioLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
                         <Link to='https://gian.org/'><img src={gianLogo} alt="devfolio" width={1000} height={1000} className='w-[20vw] sm:w-[10vw] sm:-translate-y-2 3xl:w-[20rem]' /></Link>
+                        <Link to='https://www.blockflow.network/'><img src={blockFlowLogo} alt="devfolio" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link>
                     </div>
                 </div>
 
@@ -118,6 +124,7 @@ const Sponsors = () => {
                         <Link to='https://ethindia.co/'><img src={ethIndiaLogo} alt="ethIndia" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem]' /></Link>
                         <Link to='https://www.wolfram.com/'><img src={wolframLogo} alt="wolframLogo" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem]' /></Link>
                         <Link to='https://beeceptor.com/'><img src={beeceptorLogo} alt="beeceptorLogo" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem]' /></Link>
+                        <Link to='https://www.routerprotocol.com/'><img src={routerLogo} alt="beeceptorLogo" width={1000} height={1000} className='w-[25vw] sm:w-[15vw] 3xl:w-[20rem]' /></Link>
                     </div>
                 </div>
 
@@ -165,11 +172,20 @@ const Sponsors = () => {
                 </div>
 
                 {/* SECURITY PARTNER */}
-                <div className='pt-3 3xl:pt-10 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                <div className='pt-3 3xl:pt-10 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto border-dashed border-[#9e9e9e] border-b-[0.1rem] sm:border-b-[0.5rem] flex flex-col items-center justify-center gap-5 lg:gap-6'>
                     <h1 className='font-vt323 font-medium text-[#9e9e9e] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>SECURITY PARTNER</h1>
                     <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
                         {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
                         <Link to='https://www.quillaudits.com/'><img src={quillLogo} alt="giveMyCertificateLogo" className='w-[40vw] sm:w-[18vw] md:w-[18vw] 3xl:w-[30rem]' /></Link>
+                    </div>
+                </div>
+
+                {/* MEDIA PARTNER */}
+                <div className='pt-3 3xl:pt-10 pb-4 md:pt-4 sm:pb-10 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-6'>
+                    <h1 className='font-vt323 font-medium text-[#5FA6FF] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>MEDIA PARTNER</h1>
+                    <div className='flex items-center justify-center gap-5 sm:gap-20 max-sm:mb-4'>
+                        {/* <Link to='https://www.avax.network/'><img src={avalancheLogo} alt="devfolio" width={1000} height={1000} className='w-[50vw] sm:w-[30vw] 3xl:w-[20rem] 3xl:h-[4rem]' /></Link> */}
+                        <Link to='https://www.edugraph.in/'><img src={edugraphLogo} alt="giveMyCertificateLogo" className='w-[40vw] sm:w-[18vw] md:w-[18vw] 3xl:w-[30rem]' /></Link>
                     </div>
                 </div>
             </div>
