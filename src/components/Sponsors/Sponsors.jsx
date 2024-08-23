@@ -123,7 +123,7 @@ const Sponsors = () => {
                         <Link to='https://polygon.technology/'><img src={polygonLogo} alt="polygon" width={1000} height={1000} className='w-[40vw]  sm:w-[20vw] 3xl:w-[20rem] ' /></Link>
                         <Link to='https://ethindia.co/'><img src={ethIndiaLogo} alt="ethIndia" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem]' /></Link>
                         <Link to='https://www.wolfram.com/'><img src={wolframLogo} alt="wolframLogo" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem]' /></Link>
-                        <Link to='https://beeceptor.com/'><img src={beeceptorLogo} alt="beeceptorLogo" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem]' /></Link>
+                        <Link to='https://beeceptor.com/?utm_source=hackathon&utm_medium=email&utm_campaign=iiitkalyani'><img src={beeceptorLogo} alt="beeceptorLogo" width={1000} height={1000} className='w-[40vw] sm:w-[20vw] 3xl:w-[20rem]' /></Link>
                         <Link to='https://www.routerprotocol.com/'><img src={routerLogo} alt="beeceptorLogo" width={1000} height={1000} className='w-[25vw] sm:w-[15vw] 3xl:w-[20rem]' /></Link>
                     </div>
                 </div>
